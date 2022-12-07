@@ -1,0 +1,205 @@
+// section icons
+section.section-icons{ 
+    padding: 50px;
+    border-bottom: 1px solid $black;
+    > div {
+        > div{
+            i{
+                color: $white;
+                padding: 1.2em 1.27em;
+                border-radius: 50%;
+                background-color: $helperColor;
+                margin-right: 30px;
+            }
+            > div {
+                h5 {
+                    font-weight: 600;
+                }
+                p{
+                    margin-top: 5px;
+                    font-size: .8em;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+// section deals 
+section.section-deals{
+    margin-top: 70px;
+    .left-side {
+        max-width: 1010px;
+
+        .flex {
+            h2{
+                font-weight: 600;
+                font-size: 2em;
+            }
+            .coundown-timer {
+                background-color: #fccc4d;
+                padding: 7px 27px;
+                font-weight: 600;
+                font-size: 1.2em;
+                border-radius: 20px;
+            }
+        }
+    }
+    .right-side{
+        max-width: 395px;
+    }
+
+    .content {
+        max-width: 995px;
+        max-width: 930px;
+        border: 2px solid $helperColor;
+        border-radius: 15px;
+        padding: 40px;
+        
+        > div{
+            max-width: 425px;        
+        }
+        img{
+            border-radius: 15px;
+            object-fit: cover;
+            max-width: 190px;
+        }
+
+        .content-info {
+            h4{
+                font-weight: 500;
+            }
+            .stars {
+                i{
+                    color: #fa8c17;
+                    font-size: .6em;
+                }
+                span{
+                    font-weight: 500;
+                    font-size: .7em;
+                }
+            }
+            p{
+                color: #999;
+                font-size: .7em;
+            }
+
+            .price{
+                color: $helperColor;
+                font-weight: 600;
+
+                span{
+                    font-size: .8em;
+                    color: #999;
+                    margin-left: 5px;
+                }
+            }
+
+            .sold {
+                margin-top: 35px;
+                font-size: .7em;
+                color: #999;
+                span{
+                    color: $black;
+                }
+            }
+
+
+            .progress-bar {
+                width: 100%;
+                background-color: #999;
+                border-radius: 25px;
+                position: relative;
+                height: 7px;
+                .progress-value {
+                    position: absolute;
+                    background-color: $helperColor;
+                    border-radius: inherit;
+                    height: inherit;
+                    width: 25%;
+                }
+            }
+
+        }
+    }
+
+    .right-side {
+        margin-top: 20px;
+        h2{
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        > div{
+            
+            img{
+                border-radius: 10px;
+            }
+            .info{
+                p{
+                    font-weight: 600;
+                }
+            }
+            .stars{
+                i{
+                    font-size: .7em;
+                    color: #fa8c17;
+                }
+            }
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+                padding-bottom: 13px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+//section categories
+
+section.section-categories{
+    .categories{
+        .flex:first-child{
+            > div:first-child{
+                width: 100%;
+                max-width: 558px;
+                background-color: red;
+            }
+
+            >div:nth-child(2){
+                width: 100%;
+                max-width: 358px;
+                background-color: green;
+            }
+            
+            >div:last-child{
+                width: 100%;
+                max-width: 439px;
+                background-color: blue;
+            }
+        }
+
+        .flex:last-child{
+            > div:first-child{
+                width: 100%;
+                max-width: 358px;
+                background-color: red;
+            }
+
+            >div:nth-child(2){
+                width: 100%;
+                max-width: 439px;
+                background-color: green;
+            }
+            
+            >div:last-child{
+                width: 100%;
+                max-width: 558px;
+                background-color: blue;
+            
+            }
+        }
+    }
+}

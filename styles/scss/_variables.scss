@@ -1,0 +1,56 @@
+$backgroundColor : #fff;
+$fontColor : #000;
+$helperColor : #f65d4e;
+$white : #fff;
+$black : #000;
+
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.margin-center{
+    margin: 0 auto;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.gap-5{
+    gap: 30px;
+}
+
+.gap-2{
+    gap: 10px;
+}
+
+.gap-3{
+    gap: 20px;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap');
+@import '../css/reset.css';
+@import './variables.scss';
+@import './header.scss';
+@import './slider.scss';
+@import './pages/home.scss';
+
+
+*{
+    transition: all .5s ease;
+}
+
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: $backgroundColor;
+    color: $fontColor;
+}
+
+.section-icons, .section-deals{
+    margin-bottom: 100px;
+}
+::selection{
+    background-color: $helperColor;
+}
+
+
+// dark mode 
+// body.dark{
+//     background-color: $fontColor;
+//     color: $backgroundColor;
+// }

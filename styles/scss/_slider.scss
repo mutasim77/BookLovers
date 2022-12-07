@@ -1,0 +1,68 @@
+section.slider{
+    background: url('/img/slider1.png') no-repeat;
+    background-size: cover;
+    color: $white;
+
+    > div{
+        max-width: 500px;
+        text-align: center;
+        margin: 0 0 0 100px;
+        padding: 100px 0;
+        padding-top: 200px;
+        h1{
+            position: relative;
+            font-size: 3em;
+            font-weight: 600;
+
+            &.animate{
+                opacity: 0;
+                transition: all 1s ease;
+            }
+        }
+
+        p{
+            position: relative;
+            margin: 10px 0 30px 0;
+            &.animate{
+                opacity: 0;
+                transition: all 1s ease;
+            }
+        }
+
+        button{
+            color: $black;
+            padding: 1em 1.7em;
+            background-color: $white;
+            border-radius: 20px;
+
+            &:hover{
+                color: $white;
+                background-color: $black;
+            }
+        }
+    }
+
+    .container{
+        position: relative;
+        .dots{
+            .dot{
+                cursor: pointer;
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                background-color: $helperColor;
+                border-radius: 50%;
+                bottom: 3%;
+                left: 120%;
+
+                &:last-child{
+                    left: 125%;
+                    background-color: #ccc;
+                }
+            }
+
+        }
+    }
+
+
+}

@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap");
+@import '../css/reset.css';
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-5 {
+  gap: 30px;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.gap-3 {
+  gap: 20px;
+}
+
+.header {
+  background-color: #f65d4e;
+  padding: 14px 0;
+}
+.header .header-logo img {
+  width: 50px;
+}
+.header .header-logo a {
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.header .input {
+  width: 550px;
+  padding: 13px 10px;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+}
+.header .input ::placeholder {
+  font-size: 0.8em;
+}
+.header .input button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #cf3424;
+  padding: 13px;
+  padding-left: 20px;
+  border-radius: 0 30px 30px 0;
+}
+.header .input button i {
+  color: #fff;
+}
+.header .header-right i:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.header .header-right i {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.3em;
+}
+.header .header-right i:hover {
+  color: #000;
+}
+
+section.navbars {
+  padding: 25px 0;
+}
+section.navbars .location a {
+  font-size: 0.8em;
+  text-decoration: underline;
+  color: #000;
+}
+section.navbars .location a i {
+  margin-right: 10px;
+}
+section.navbars .nav ul li a {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+}
+section.navbars .nav ul li a:hover {
+  color: #f65d4e;
+}
+section.navbars .nav ul li:not(:last-child) {
+  margin-right: 25px;
+}
+section.navbars .contacts a {
+  font-weight: 500;
+  color: #f65d4e;
+}
+section.navbars .contacts a i {
+  background-color: #ccc;
+  padding: 5px 7px;
+  border-radius: 50%;
+  color: #000;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+section.navbars .contacts a:hover {
+  color: #cf3424;
+}
+
+section.slider {
+  background: url("/img/slider1.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+section.slider > div {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 0 0 100px;
+  padding: 100px 0;
+  padding-top: 200px;
+}
+section.slider > div h1 {
+  position: relative;
+  font-size: 3em;
+  font-weight: 600;
+}
+section.slider > div h1.animate {
+  opacity: 0;
+  transition: all 1s ease;
+}
+section.slider > div p {
+  position: relative;
+  margin: 10px 0 30px 0;
+}
+section.slider > div p.animate {
+  opacity: 0;
+  transition: all 1s ease;
+}
+section.slider > div button {
+  color: #000;
+  padding: 1em 1.7em;
+  background-color: #fff;
+  border-radius: 20px;
+}
+section.slider > div button:hover {
+  color: #fff;
+  background-color: #000;
+}
+section.slider .container {
+  position: relative;
+}
+section.slider .container .dots .dot {
+  cursor: pointer;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #f65d4e;
+  border-radius: 50%;
+  bottom: 3%;
+  left: 120%;
+}
+section.slider .container .dots .dot:last-child {
+  left: 125%;
+  background-color: #ccc;
+}
+
+section.section-icons {
+  padding: 50px;
+  border-bottom: 1px solid #000;
+}
+section.section-icons > div > div i {
+  color: #fff;
+  padding: 1.2em 1.27em;
+  border-radius: 50%;
+  background-color: #f65d4e;
+  margin-right: 30px;
+}
+section.section-icons > div > div > div h5 {
+  font-weight: 600;
+}
+section.section-icons > div > div > div p {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+section.section-deals {
+  margin-top: 70px;
+}
+section.section-deals .left-side {
+  max-width: 1010px;
+}
+section.section-deals .left-side .flex h2 {
+  font-weight: 600;
+  font-size: 2em;
+}
+section.section-deals .left-side .flex .coundown-timer {
+  background-color: #fccc4d;
+  padding: 7px 27px;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 20px;
+}
+section.section-deals .right-side {
+  max-width: 395px;
+}
+section.section-deals .content {
+  max-width: 995px;
+  max-width: 930px;
+  border: 2px solid #f65d4e;
+  border-radius: 15px;
+  padding: 40px;
+}
+section.section-deals .content > div {
+  max-width: 425px;
+}
+section.section-deals .content img {
+  border-radius: 15px;
+  object-fit: cover;
+  max-width: 190px;
+}
+section.section-deals .content .content-info h4 {
+  font-weight: 500;
+}
+section.section-deals .content .content-info .stars i {
+  color: #fa8c17;
+  font-size: 0.6em;
+}
+section.section-deals .content .content-info .stars span {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+section.section-deals .content .content-info p {
+  color: #999;
+  font-size: 0.7em;
+}
+section.section-deals .content .content-info .price {
+  color: #f65d4e;
+  font-weight: 600;
+}
+section.section-deals .content .content-info .price span {
+  font-size: 0.8em;
+  color: #999;
+  margin-left: 5px;
+}
+section.section-deals .content .content-info .sold {
+  margin-top: 35px;
+  font-size: 0.7em;
+  color: #999;
+}
+section.section-deals .content .content-info .sold span {
+  color: #000;
+}
+section.section-deals .content .content-info .progress-bar {
+  width: 100%;
+  background-color: #999;
+  border-radius: 25px;
+  position: relative;
+  height: 7px;
+}
+section.section-deals .content .content-info .progress-bar .progress-value {
+  position: absolute;
+  background-color: #f65d4e;
+  border-radius: inherit;
+  height: inherit;
+  width: 25%;
+}
+section.section-deals .right-side {
+  margin-top: 20px;
+}
+section.section-deals .right-side h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+section.section-deals .right-side > div img {
+  border-radius: 10px;
+}
+section.section-deals .right-side > div .info p {
+  font-weight: 600;
+}
+section.section-deals .right-side > div .stars i {
+  font-size: 0.7em;
+  color: #fa8c17;
+}
+section.section-deals .right-side > div:not(:last-child) {
+  margin-bottom: 30px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+section.section-categories .categories .flex:first-child > div:first-child {
+  width: 100%;
+  max-width: 558px;
+  background-color: red;
+}
+section.section-categories .categories .flex:first-child > div:nth-child(2) {
+  width: 100%;
+  max-width: 358px;
+  background-color: green;
+}
+section.section-categories .categories .flex:first-child > div:last-child {
+  width: 100%;
+  max-width: 439px;
+  background-color: blue;
+}
+section.section-categories .categories .flex:last-child > div:first-child {
+  width: 100%;
+  max-width: 358px;
+  background-color: red;
+}
+section.section-categories .categories .flex:last-child > div:nth-child(2) {
+  width: 100%;
+  max-width: 439px;
+  background-color: green;
+}
+section.section-categories .categories .flex:last-child > div:last-child {
+  width: 100%;
+  max-width: 558px;
+  background-color: blue;
+}
+
+* {
+  transition: all 0.5s ease;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.section-icons, .section-deals {
+  margin-bottom: 100px;
+}
+
+::selection {
+  background-color: #f65d4e;
+}/*# sourceMappingURL=style.css.map */

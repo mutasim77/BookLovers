@@ -1,0 +1,114 @@
+.header{
+    background-color: $helperColor;
+    padding: 14px 0;
+    .header-logo{
+        img{
+            width: 50px;
+        }       
+    } 
+
+    .header-logo {
+        a{
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: $white;
+        }
+    }
+    .input {
+        width: 550px;
+        padding: 13px 10px;
+        border-radius: 30px;
+        background-color: $backgroundColor;
+        position: relative;
+        ::placeholder{
+            font-size: .8em;
+        }
+
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #cf3424;
+            padding: 13px;
+            padding-left: 20px;
+            border-radius: 0 30px 30px 0;
+
+            i{
+                color: $white;
+            }
+        }
+
+
+    }
+
+    .header-right {
+        i:not(:last-child){
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid $white;
+
+        }
+
+        i{ 
+            cursor: pointer;
+            color: $white;
+            font-size: 1.3em;
+
+            &:hover{
+                color: $black;
+            }
+        }
+    }
+}
+
+section.navbars{
+    padding: 25px 0;
+    // border-bottom: 1px solid $black;
+    .location{
+        a{
+            font-size: .8em;
+            text-decoration: underline;
+            color: $black;
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    .nav {
+        ul{
+         li{
+            a{
+                color: $black;
+                font-size: 17px;
+                font-weight: 500;
+
+                &:hover{
+                    color: $helperColor;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 25px;
+            }
+         }  
+        }
+    }
+    .contacts {
+        a{
+            i{
+                background-color: #ccc;
+                padding: 5px 7px;
+                border-radius: 50%;
+                color: $black;
+                margin-right: 10px;
+                font-size: 1.3em;
+            }
+            font-weight: 500;
+            color: $helperColor;
+
+            &:hover{
+                color: #cf3424;
+            }
+        }
+    }
+}
