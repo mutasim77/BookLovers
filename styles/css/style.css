@@ -319,37 +319,53 @@ section.section-deals .right-side > div:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+section.section-categories .categories .flex > div {
+  border-radius: 15px;
+  height: 300px;
+  font-weight: 500;
+  font-size: 1.2em;
+  display: flex;
+  align-items: end;
+  padding: 0 0 30px 30px;
+}
 section.section-categories .categories .flex:first-child > div:first-child {
   width: 100%;
-  max-width: 558px;
-  background-color: red;
+  max-width: 555px;
+  background: url("/img/homeCategories/6.jpeg");
 }
 section.section-categories .categories .flex:first-child > div:nth-child(2) {
   width: 100%;
-  max-width: 358px;
-  background-color: green;
+  max-width: 355px;
+  background: url("/img/homeCategories/5.jpeg");
 }
 section.section-categories .categories .flex:first-child > div:last-child {
   width: 100%;
-  max-width: 439px;
+  max-width: 435px;
   background-color: blue;
+  background: url("/img/homeCategories/4.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:first-child {
   width: 100%;
-  max-width: 358px;
-  background-color: red;
+  max-width: 355px;
+  background: url("/img/homeCategories/3.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:nth-child(2) {
   width: 100%;
-  max-width: 439px;
+  max-width: 435px;
   background-color: green;
+  background: url("/img/homeCategories/2.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:last-child {
   width: 100%;
-  max-width: 558px;
-  background-color: blue;
+  max-width: 555px;
+  background: url("/img/homeCategories/1.jpeg");
 }
 
+@media (max-width: 767px) {
+  section.section-categories .categories .flex {
+    flex-wrap: wrap;
+  }
+}
 * {
   transition: all 0.5s ease;
 }

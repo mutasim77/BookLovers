@@ -24,4 +24,6 @@ btn.forEach(item => {
 
 
 
-AOS.init();
+AOS.init({
+    duration: 700
+});

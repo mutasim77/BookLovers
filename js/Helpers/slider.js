@@ -12,7 +12,7 @@ export function slider(event) {
             $("section.slider h1").animate({ opacity: '1' }, 'slow');
             $("section.slider p").animate({ opacity: '1' }, 'slow');
             $("section.slider button").animate({ opacity: '1' }, 'slow');
-            section.css('background', 'url("http://127.0.0.1:5500/img/slider1.png")')
+            section.css('background', 'url("/img/slider1.png")')
             section.css('backgroundSize', 'cover');
         }, 1000)
         setTimeout(() => {
@@ -28,7 +28,7 @@ export function slider(event) {
             $("section.slider h1").animate({ opacity: '1' }, 'slow');
             $("section.slider p").animate({ opacity: '1' }, 'slow');
             $("section.slider button").animate({ opacity: '1' }, 'slow');
-            section.css('background', 'url("http://127.0.0.1:5500/img/slider2.png")')
+            section.css('background', 'url("/img/slider2.png")')
             section.css('backgroundSize', 'cover');
         }, 1000)
         setTimeout(() => {

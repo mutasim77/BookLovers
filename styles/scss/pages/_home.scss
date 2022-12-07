@@ -158,47 +158,75 @@ section.section-deals{
 }
 
 //section categories
-
 section.section-categories{
     .categories{
+
+        .flex{
+            > div{
+                border-radius: 15px;
+                height: 300px;
+                font-weight: 500;
+                font-size: 1.2em;
+                display: flex;
+                align-items: end;
+                padding: 0 0 30px 30px;
+            }
+
+
+        }
         .flex:first-child{
+            
             > div:first-child{
                 width: 100%;
-                max-width: 558px;
-                background-color: red;
+                max-width: 555px;
+                background: url('/img/homeCategories/6.jpeg');
             }
 
             >div:nth-child(2){
                 width: 100%;
-                max-width: 358px;
-                background-color: green;
+                max-width: 355px;
+                background: url('/img/homeCategories/5.jpeg');
             }
             
             >div:last-child{
                 width: 100%;
-                max-width: 439px;
+                max-width: 435px;
                 background-color: blue;
+                background: url('/img/homeCategories/4.jpeg');
             }
         }
 
         .flex:last-child{
+            
             > div:first-child{
                 width: 100%;
-                max-width: 358px;
-                background-color: red;
+                max-width: 355px;
+                background: url('/img/homeCategories/3.jpeg');
             }
 
             >div:nth-child(2){
                 width: 100%;
-                max-width: 439px;
+                max-width: 435px;
                 background-color: green;
+                background: url('/img/homeCategories/2.jpeg');
             }
             
             >div:last-child{
                 width: 100%;
-                max-width: 558px;
-                background-color: blue;
-            
+                max-width: 555px;
+                background: url('/img/homeCategories/1.jpeg');
+            }
+        }
+    }
+}
+
+
+//mobile
+@media (max-width: 767px) {
+    section.section-categories{
+        .categories{
+            .flex{
+                flex-wrap: wrap;
             }
         }
     }
