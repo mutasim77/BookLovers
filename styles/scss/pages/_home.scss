@@ -220,6 +220,87 @@ section.section-categories{
     }
 }
 
+// section popular books
+section.section-popular-books{
+    .left-side{
+        width: 100%;
+        max-width: 380px;
+
+        h1{
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .content{
+            background-color: #f6f4ff;
+            border-radius: 15px;
+            padding: 25px;
+            img{
+                width: 80px;
+                border-radius: 10px;
+            }
+
+            > div{
+                padding: 20px 0;
+                &:not(:last-child){
+                    border-bottom: 1px solid #ccc;
+                }
+
+                &:last-child{
+                    padding-bottom: 0;
+                }
+
+                &:first-child{
+                    padding-top: 0;
+                }
+            }
+
+            .content-info{
+                h4{
+                    font-weight: 500;
+                }
+                .stars {
+                    i{
+                        color: #fa8c17;
+                        font-size: .6em;
+                    }
+                    span{
+                        font-weight: 500;
+                        font-size: .7em;
+                    }
+                }
+                p{
+                    color: #999;
+                    font-size: .7em;
+                }
+    
+                .price{
+                    color: $helperColor;
+                    font-weight: 600;
+    
+                    span{
+                        font-size: .8em;
+                        color: #999;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+    .right-side{
+        width: 100%;
+        max-width: 900px;
+        background-color: blue;
+    }
+    
+}
+
 
 //mobile
 @media (max-width: 767px) {
@@ -228,6 +309,12 @@ section.section-categories{
             .flex{
                 flex-wrap: wrap;
             }
+        }
+    }
+
+    section.section-popular-books{
+        .container{
+            flex-wrap: wrap;
         }
     }
 }

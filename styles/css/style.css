@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -361,8 +365,70 @@ section.section-categories .categories .flex:last-child > div:last-child {
   background: url("/img/homeCategories/1.jpeg");
 }
 
+section.section-popular-books .left-side {
+  width: 100%;
+  max-width: 380px;
+}
+section.section-popular-books .left-side h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+section.section-popular-books .left-side .content {
+  background-color: #f6f4ff;
+  border-radius: 15px;
+  padding: 25px;
+}
+section.section-popular-books .left-side .content img {
+  width: 80px;
+  border-radius: 10px;
+}
+section.section-popular-books .left-side .content > div {
+  padding: 20px 0;
+}
+section.section-popular-books .left-side .content > div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+section.section-popular-books .left-side .content > div:last-child {
+  padding-bottom: 0;
+}
+section.section-popular-books .left-side .content > div:first-child {
+  padding-top: 0;
+}
+section.section-popular-books .left-side .content .content-info h4 {
+  font-weight: 500;
+}
+section.section-popular-books .left-side .content .content-info .stars i {
+  color: #fa8c17;
+  font-size: 0.6em;
+}
+section.section-popular-books .left-side .content .content-info .stars span {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+section.section-popular-books .left-side .content .content-info p {
+  color: #999;
+  font-size: 0.7em;
+}
+section.section-popular-books .left-side .content .content-info .price {
+  color: #f65d4e;
+  font-weight: 600;
+}
+section.section-popular-books .left-side .content .content-info .price span {
+  font-size: 0.8em;
+  color: #999;
+  margin-left: 5px;
+}
+section.section-popular-books .right-side {
+  width: 100%;
+  max-width: 900px;
+  background-color: blue;
+}
+
 @media (max-width: 767px) {
   section.section-categories .categories .flex {
+    flex-wrap: wrap;
+  }
+  section.section-popular-books .container {
     flex-wrap: wrap;
   }
 }
@@ -376,7 +442,7 @@ body {
   color: #000;
 }
 
-.section-icons, .section-deals {
+.section-icons, .section-deals, .section-categories {
   margin-bottom: 100px;
 }
 
