@@ -58,3 +58,29 @@ $black : #000;
 .gap-3{
     gap: 20px;
 }
+
+//for home page - content info
+@mixin contenInfo {
+    h4{
+        font-weight: 500;
+    }
+    .stars {
+        i{
+            color: #fa8c17;
+            font-size: .6em;
+        }
+        span{
+            font-weight: 500;
+            font-size: .7em;
+        }
+    }
+    p{
+        color: #999;
+        font-size: .7em;
+    }
+
+    .price{
+        color: $helperColor;
+        font-weight: 600;
+    }
+}

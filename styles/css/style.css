@@ -372,6 +372,7 @@ section.section-popular-books .left-side {
 section.section-popular-books .left-side h1 {
   font-size: 1.6em;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 section.section-popular-books .left-side .content {
   background-color: #f6f4ff;
@@ -413,15 +414,51 @@ section.section-popular-books .left-side .content .content-info .price {
   color: #f65d4e;
   font-weight: 600;
 }
-section.section-popular-books .left-side .content .content-info .price span {
-  font-size: 0.8em;
-  color: #999;
-  margin-left: 5px;
-}
 section.section-popular-books .right-side {
   width: 100%;
   max-width: 900px;
-  background-color: blue;
+}
+section.section-popular-books .right-side h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+section.section-popular-books .right-side h1::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #ccc;
+  left: 30%;
+  bottom: 50%;
+}
+section.section-popular-books .right-side .content img {
+  max-width: 200px;
+  border-radius: 15px;
+}
+section.section-popular-books .right-side .content h4 {
+  font-weight: 500;
+}
+section.section-popular-books .right-side .content .stars i {
+  color: #fa8c17;
+  font-size: 0.6em;
+}
+section.section-popular-books .right-side .content .stars span {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+section.section-popular-books .right-side .content p {
+  color: #999;
+  font-size: 0.7em;
+}
+section.section-popular-books .right-side .content .price {
+  color: #f65d4e;
+  font-weight: 600;
+}
+section.section-popular-books .right-side .content > div {
+  padding: 0 8px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -430,6 +467,25 @@ section.section-popular-books .right-side {
   }
   section.section-popular-books .container {
     flex-wrap: wrap;
+  }
+  section.section-popular-books .right-side h1 {
+    margin: 20px 0;
+    text-align: center;
+  }
+  section.section-popular-books .right-side .content img {
+    max-width: 140px;
+  }
+  section.section-popular-books .right-side .content h4 {
+    font-size: 1em;
+    max-width: 162px;
+    font-size: 0.8em;
+  }
+  section.section-popular-books .right-side .content > div {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  section.section-popular-books .right-side .content .content-info {
+    text-align: center;
   }
 }
 * {
