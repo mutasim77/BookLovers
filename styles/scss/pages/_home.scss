@@ -589,17 +589,28 @@ section.section-order{
             margin: 0 auto;
         }
         .burger-menu{
-            display: flex !important;
+            display: flex !important; 
             i{
                 font-size: 1.7em;
                 color: $white;
             }
-
-            &.active{
-                // display: none !important;
-            }
+        }   
+        .nav-list{
+            // display: none;
         }
-    }
+        .burger-menu {
+            display: block;
+        }
+
+        .burger-menu.active .nav-list{
+            background-color: red;
+        }
+
+
+
+        }
+
+
     // slider 
     section.slider{
         > div{

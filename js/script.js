@@ -9,21 +9,12 @@ btn.forEach(item => {
 
 //! MenuBar -> mobile, tablet adaptation;
 $('.burger-menu').on('click', () => {
+    console.log('Hello');
     $('.burger-menu').addClass('active');
+    if ($('.burger-menu').hasClass('active')) {
+        $('.nav-list').addClass('show');
+    }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

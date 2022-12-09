@@ -779,6 +779,12 @@ section.section-order .container > div button:hover {
     font-size: 1.7em;
     color: #fff;
   }
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu.active .nav-list {
+    background-color: red;
+  }
   section.slider > div {
     margin: 0;
   }
