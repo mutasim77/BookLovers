@@ -466,6 +466,239 @@ section.section-popular-books .right-side .content > div {
   padding-bottom: 30px;
 }
 
+section.section-holiday-gift {
+  background: url("/img/holidayGift.jpeg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 600px;
+}
+section.section-holiday-gift .info {
+  padding-top: 200px;
+}
+section.section-holiday-gift .info p {
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+section.section-holiday-gift .info p:first-child {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #f65d4e;
+}
+section.section-holiday-gift .info h1 {
+  font-weight: 600;
+  font-size: 3em;
+}
+section.section-holiday-gift .info a {
+  color: #000;
+  background-color: #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+section.section-holiday-gift .info a::after {
+  content: "";
+  position: absolute;
+  background-color: #f65d4e;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  width: 0;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+section.section-holiday-gift .info a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+section.section-all-categories h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+section.section-all-categories h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #ccc;
+  left: 30%;
+  bottom: 50%;
+  left: 35%;
+}
+section.section-all-categories h1:not(:first-child) {
+  margin-top: 70px;
+}
+section.section-all-categories .row {
+  min-height: 400px;
+}
+section.section-all-categories .row .left-side {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+  background: url("/img/Biographies.jpeg") no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  padding: 50px;
+}
+section.section-all-categories .row .left-side ul li {
+  font-size: 0.8em;
+  line-height: 2.5;
+}
+section.section-all-categories .row .right-side {
+  width: 100%;
+  max-width: 820px;
+}
+section.section-all-categories .row .right-side .content img {
+  width: 190px;
+  height: 275px;
+  border-radius: 10px;
+}
+section.section-all-categories .row .right-side .content .content-info h4 {
+  font-weight: 500;
+}
+section.section-all-categories .row .right-side .content .content-info .stars i {
+  color: #fa8c17;
+  font-size: 0.6em;
+}
+section.section-all-categories .row .right-side .content .content-info .stars span {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+section.section-all-categories .row .right-side .content .content-info p {
+  color: #999;
+  font-size: 0.7em;
+}
+section.section-all-categories .row .right-side .content .content-info .price {
+  color: #f65d4e;
+  font-weight: 600;
+}
+section.section-all-categories .row:nth-child(2) .left-side {
+  background: url("/img/Children.jpeg") no-repeat;
+  background-size: cover;
+}
+section.section-all-categories .row:last-child .left-side {
+  background: url("/img/Fiction.jpeg") no-repeat;
+  background-size: cover;
+}
+
+section.section-meetup {
+  min-height: 620px;
+  background: url("/img/meetup.jpeg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.section-meetup .left-side {
+  padding-top: 90px;
+  max-width: 415px;
+}
+section.section-meetup .left-side h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+section.section-meetup .left-side p {
+  font-size: 0.9em;
+  color: #444444;
+}
+section.section-meetup .left-side > .flex {
+  gap: 50px;
+}
+section.section-meetup .left-side > .flex div {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 80px;
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: #f65d4e;
+  position: relative;
+}
+section.section-meetup .left-side > .flex div::after {
+  content: "Books Collections";
+  position: absolute;
+  text-align: center;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  bottom: -90px;
+  font-size: 0.8em;
+}
+section.section-meetup .left-side a {
+  color: #000;
+  background-color: #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  width: 46%;
+  margin-top: 70px;
+}
+section.section-meetup .left-side a::after {
+  content: "";
+  position: absolute;
+  background-color: #f65d4e;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  width: 0;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+section.section-meetup .left-side a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+section.section-order .container {
+  background: url("/img/youOrder.jpeg");
+  background-size: cover;
+  padding: 80px 0;
+  border-radius: 20px;
+  color: #fff;
+}
+section.section-order .container h1 {
+  font-size: 2em;
+  font-weight: 600;
+}
+section.section-order .container h1 span {
+  color: #f65d4e;
+}
+section.section-order .container p {
+  font-size: 0.9em;
+}
+section.section-order .container > div {
+  position: relative;
+}
+section.section-order .container > div input {
+  background-color: #fff;
+  width: 480px;
+  padding: 0.9em 1.2em;
+  border-radius: 20px;
+  color: #000;
+}
+section.section-order .container > div button {
+  position: absolute;
+  background-color: #f65d4e;
+  padding: 0.9em 1.2em;
+  border-radius: 20px;
+  right: 30.5%;
+}
+section.section-order .container > div button:hover {
+  background-color: #ff0000;
+}
+
+::placeholder {
+  font-size: 0.7em;
+}
+
 @media (max-width: 767px) {
   section.section-categories .categories .flex {
     flex-wrap: wrap;
@@ -492,6 +725,46 @@ section.section-popular-books .right-side .content > div {
   section.section-popular-books .right-side .content .content-info {
     text-align: center;
   }
+  section.section-holiday-gift {
+    min-height: 400px;
+  }
+  section.section-holiday-gift .info {
+    padding-top: 130px;
+  }
+  section.section-holiday-gift .info p {
+    letter-spacing: 1px;
+    font-size: 0.7em;
+  }
+  section.section-holiday-gift .info p:first-child {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #f65d4e;
+  }
+  section.section-holiday-gift .info h1 {
+    font-weight: 600;
+    font-size: 1.7em;
+  }
+  section.section-all-categories .row .right-side .content img {
+    width: 150px;
+    height: 210px;
+  }
+  section.section-all-categories h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  section.section-all-categories h1::after {
+    display: none;
+  }
+  section.section-meetup {
+    background-position: 0;
+  }
+  section.section-order .container > div input {
+    width: 315px;
+  }
+  section.section-order .container > div button {
+    right: 4.5%;
+  }
 }
 * {
   transition: all 0.5s ease;
@@ -503,10 +776,18 @@ body {
   color: #000;
 }
 
-.section-icons, .section-deals, .section-categories {
+.section-icons,
+.section-deals,
+.section-categories,
+.section-popular-books,
+.section-holiday-gift,
+.section-all-categories,
+.section-meetup,
+.section-order {
   margin-bottom: 100px;
 }
 
 ::selection {
   background-color: #f65d4e;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

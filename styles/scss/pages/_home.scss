@@ -288,7 +288,6 @@ section.section-popular-books{
                 background-color: #ccc;
                 left: 30%;
                 bottom: 50%;
-
             }
 
         }
@@ -305,12 +304,215 @@ section.section-popular-books{
             }
         }
     }
+}
+
+// section holiday gifts 
+section.section-holiday-gift{
+     background: url('/img/holidayGift.jpeg') no-repeat;
+     background-position: center center;
+     background-size: cover;
+     min-height: 600px;
+     .info{
+        padding-top: 200px;
+        p{
+            letter-spacing: 1px;
+            font-size: .8em;
+            &:first-child{
+                font-size: .8em;
+                font-weight: 700;
+                color: $helperColor;
+            }
+        }
+        h1{
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        a{
+            @include createButton();
+        }
+    }
+
+}
+
+// section all categories 
+section.section-all-categories {
+    h1{
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 50px;
+        position: relative;
+        &::after{
+            @include createLine(50%);
+            left: 35%;
+        }
+
+        &:not(:first-child){
+            margin-top: 70px;
+        }
+    }
+
+
+
+    .row {
+        min-height: 400px;
+        .left-side {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 15px;
+            background: url('/img/Biographies.jpeg') no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            padding: 50px;
+            ul {
+                li {
+                    font-size: .8em;
+                    line-height: 2.5;
+                }
+            }
+        }
+
+        .right-side {
+            width: 100%;
+            max-width: 820px;
+            .content{
+                img{
+                    width: 190px;
+                    height: 275px;
+                    border-radius: 10px;
+                }
+                .content-info{
+                    @include contenInfo();
+                }
+            }
+        }
+
+
+    }
+    
+    .row:nth-child(2){
+        .left-side{
+            $url : '/img/Children.jpeg';
+            @include backgroundCategories($url);
+        }
+    }
+    .row:last-child{
+        .left-side{           
+            $url : '/img/Fiction.jpeg';
+            @include backgroundCategories($url);
+        }
+    }
     
 }
+
+// section meetup 
+section.section-meetup{
+    min-height: 620px;
+    background: url('/img/meetup.jpeg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .left-side{
+        padding-top: 90px;
+        max-width: 415px;
+
+        h1{
+            font-size: 3em;
+            font-weight: 500;
+        }
+        p{
+            font-size: .9em;
+            color: #444444;
+        }
+        > .flex{
+            gap: 50px;
+            div {
+                width: 80px;
+                display: flex;
+                align-items: center;   
+                justify-content: center;             
+                color: $white;
+                height: 80px;
+                font-weight: 600;
+                border-radius: 50%;
+                background-color: $helperColor;
+                position: relative;
+
+                &::after{
+                    content: 'Books Collections';
+                    position: absolute;
+                    text-align: center;
+                    color: $black;
+                    width: 100%;
+                    height: 100%;
+                    bottom: -90px;
+                    font-size: .8em;
+                }
+
+            }
+        }
+        a{
+            @include createButton();
+            width: 46%;
+            margin-top: 70px;
+        }
+    }
+}
+
+section.section-order{
+    .container{
+        background: url('/img/youOrder.jpeg');
+        background-size: cover;
+        padding: 80px 0;
+        border-radius: 20px;
+        color: $white;
+
+        .flex{
+        }
+        h1{
+            font-size: 2em;
+            font-weight: 600;
+            span{
+                color: $helperColor;
+            }
+        }
+        p{
+            font-size: .9em;
+        }
+        > div{
+            position: relative;
+
+            input{
+                background-color: $white;
+                width: 480px;
+                padding: .9em 1.2em;
+                border-radius: 20px;
+                color: $black;
+            }
+            button{
+                position: absolute;
+                background-color: $helperColor;
+                padding: .9em 1.2em;
+                border-radius: 20px;
+                right: 30.5%;
+
+                &:hover{
+                    background-color: #ff0000;
+                }
+            }
+        }
+    }
+}
+::placeholder{
+    font-size: .7em;
+}
+
+
 
 
 //mobile
 @media (max-width: 767px) {
+
+    // section categories 
     section.section-categories{
         .categories{
             .flex{
@@ -319,6 +521,7 @@ section.section-popular-books{
         }
     }
 
+    // section popular books 
     section.section-popular-books{
         .container{
             flex-wrap: wrap;
@@ -353,4 +556,66 @@ section.section-popular-books{
         }
     }
 
+    // section holiday gift 
+    section.section-holiday-gift{
+        min-height: 400px;
+        .info{
+            padding-top: 130px;
+            p{
+                letter-spacing: 1px;
+                font-size: .7em;
+                &:first-child{
+                    font-size: .8em;
+                    font-weight: 700;
+                    color: $helperColor;
+                }
+            }
+            h1{
+                font-weight: 600;
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    // section all categories 
+    section.section-all-categories{
+        .row{
+            .right-side{
+                .content{
+                    img{
+                        width: 150px;
+                        height: 210px;
+                    }
+                }
+            }
+        }
+        h1{
+            margin: 20px;
+            text-align: center;
+            font-size: 1.8em;
+            &::after{
+                display: none;
+            }
+        }
+
+
+    }
+    // section meetup 
+    section.section-meetup {
+        background-position: 0;
+    }
+
+    // section order 
+    section.section-order{
+        .container{
+             > div {
+                input{
+                    width: 315px;
+                }
+                button{
+                    right: 4.5%;
+                }
+             }
+        }
+    }
 }
