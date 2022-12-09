@@ -65,6 +65,9 @@
 .header .header-logo img {
   width: 50px;
 }
+.header .burger-menu {
+  display: none;
+}
 .header .header-logo a {
   font-size: 1.3em;
   font-weight: 600;
@@ -756,6 +759,35 @@ section.section-order .container > div button:hover {
 }
 
 @media (max-width: 767px) {
+  header .input {
+    display: none;
+  }
+  header .header-right {
+    display: none;
+  }
+  header section.navbars {
+    display: none;
+  }
+  header .header-logo {
+    display: flex;
+    margin: 0 auto;
+  }
+  header .burger-menu {
+    display: flex !important;
+  }
+  header .burger-menu i {
+    font-size: 1.7em;
+    color: #fff;
+  }
+  section.slider > div {
+    margin: 0;
+  }
+  section.slider .container .dots .dot {
+    left: 50%;
+  }
+  section.slider .container .dots .dot:last-child {
+    left: 57%;
+  }
   section.section-categories .categories .flex {
     flex-wrap: wrap;
   }

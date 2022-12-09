@@ -7,6 +7,10 @@ btn.forEach(item => {
     item.addEventListener('click', slider.bind(event));
 })
 
+//! MenuBar -> mobile, tablet adaptation;
+$('.burger-menu').on('click', () => {
+    $('.burger-menu').addClass('active');
+})
 
 
 

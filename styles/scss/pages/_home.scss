@@ -573,6 +573,51 @@ section.section-order{
 //mobile
 @media (max-width: 767px) {
 
+    // header 
+    header{
+        .input{
+            display: none;
+        }
+        .header-right{
+            display: none;
+        }
+        section.navbars{
+            display: none;
+        }
+        .header-logo{
+            display: flex;
+            margin: 0 auto;
+        }
+        .burger-menu{
+            display: flex !important;
+            i{
+                font-size: 1.7em;
+                color: $white;
+            }
+
+            &.active{
+                // display: none !important;
+            }
+        }
+    }
+    // slider 
+    section.slider{
+        > div{
+            margin: 0;
+        }
+        .container {
+            .dots{
+                .dot{
+                    left: 50%;
+
+                    &:last-child{
+                        left: 57%;
+                    }
+                }
+            }
+        }
+    }
+
     // section categories 
     section.section-categories{
         .categories{
@@ -679,4 +724,8 @@ section.section-order{
              }
         }
     }
+}
+
+@media (max-width: 1024px){
+
 }
