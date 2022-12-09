@@ -3,7 +3,7 @@ $fontColor : #000;
 $helperColor : #f65d4e;
 $white : #fff;
 $black : #000;
-
+$footerColor : #282828;
 
 .flex{
     display: flex;
@@ -59,8 +59,12 @@ $black : #000;
     gap: 20px;
 }
 
+.padding-80{
+    padding: 100px 0;
+}
+
 //for home page - content info
-@mixin contenInfo {
+@mixin contenInfo{
     h4{
         font-weight: 500;
     }
@@ -86,7 +90,7 @@ $black : #000;
 }
 
 // home page - lines 
-@mixin createLine($width) {
+@mixin createLine($width){
     content: '';
     position: absolute;
     width: $width;

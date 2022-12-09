@@ -466,8 +466,6 @@ section.section-order{
         border-radius: 20px;
         color: $white;
 
-        .flex{
-        }
         h1{
             font-size: 2em;
             font-weight: 600;
@@ -501,6 +499,69 @@ section.section-order{
             }
         }
     }
+}
+
+//footer 
+.footer{
+    background-color: $footerColor;
+    color: $white;
+    font-family: "Poppins", sans-serif;
+
+    h1{
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    ul, p{
+        line-height: 2;
+        font-size: .9em;
+    }
+    li, p, i{
+        color: #999999;
+        cursor: pointer;
+
+        &:hover{
+            color: $white;
+        }
+    }
+    .logo{
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+    .contact{
+        margin-top: 20px;
+        color: $white;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .numbers{
+        font-weight: 500;
+        font-size: 2em;
+        color: $helperColor;  
+        margin: 10px 0;      
+    }
+
+    .social-media{
+        margin-top: 20px;
+        color: #999;
+        i{
+            font-size: 1.3em;
+        }
+    }
+    .container{
+
+        > div{
+            &:last-child{
+                border-top: 1px solid #ccc;
+                padding: 20px 0;
+                color: #999;
+                span{
+                    color: $helperColor;
+                }
+            }
+        }
+
+    }
+
 }
 ::placeholder{
     font-size: .7em;

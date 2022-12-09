@@ -54,6 +54,10 @@
   gap: 20px;
 }
 
+.padding-80 {
+  padding: 100px 0;
+}
+
 .header {
   background-color: #f65d4e;
   padding: 14px 0;
@@ -693,6 +697,58 @@ section.section-order .container > div button {
 }
 section.section-order .container > div button:hover {
   background-color: #ff0000;
+}
+
+.footer {
+  background-color: #282828;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.footer h1 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.footer ul, .footer p {
+  line-height: 2;
+  font-size: 0.9em;
+}
+.footer li, .footer p, .footer i {
+  color: #999999;
+  cursor: pointer;
+}
+.footer li:hover, .footer p:hover, .footer i:hover {
+  color: #fff;
+}
+.footer .logo {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.footer .contact {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+}
+.footer .numbers {
+  font-weight: 500;
+  font-size: 2em;
+  color: #f65d4e;
+  margin: 10px 0;
+}
+.footer .social-media {
+  margin-top: 20px;
+  color: #999;
+}
+.footer .social-media i {
+  font-size: 1.3em;
+}
+.footer .container > div:last-child {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  color: #999;
+}
+.footer .container > div:last-child span {
+  color: #f65d4e;
 }
 
 ::placeholder {
