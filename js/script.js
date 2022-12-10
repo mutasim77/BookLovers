@@ -18,7 +18,6 @@ $('.burger-menu').on('click', () => {
 
 
 
-
 AOS.init({
     duration: 700
 });

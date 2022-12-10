@@ -109,6 +109,9 @@
 .header .header-right i:hover {
   color: #000;
 }
+.header .nav-list {
+  display: none;
+}
 
 section.navbars {
   padding: 25px 0;
