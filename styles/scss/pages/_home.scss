@@ -501,77 +501,162 @@ section.section-order{
     }
 }
 
-//footer 
-.footer{
-    background-color: $footerColor;
-    color: $white;
-    font-family: "Poppins", sans-serif;
-
-    h1{
-        font-size: 1.1em;
-        font-weight: 600;
-    }
-    ul, p{
-        line-height: 2;
-        font-size: .9em;
-    }
-    li, p, i{
-        color: #999999;
-        cursor: pointer;
-
-        &:hover{
-            color: $white;
-        }
-    }
-    .logo{
-        font-weight: 500;
-        font-size: 1.4em;
-    }
-    .contact{
-        margin-top: 20px;
-        color: $white;
-        font-size: 1em;
-        font-weight: 500;
-    }
-    .numbers{
-        font-weight: 500;
-        font-size: 2em;
-        color: $helperColor;  
-        margin: 10px 0;      
-    }
-
-    .social-media{
-        margin-top: 20px;
-        color: #999;
-        i{
-            font-size: 1.3em;
-        }
-    }
-    .container{
-
-        > div{
-            &:last-child{
-                border-top: 1px solid #ccc;
-                padding: 20px 0;
-                color: #999;
-                span{
-                    color: $helperColor;
-                }
-            }
-        }
-
-    }
-
-}
 ::placeholder{
     font-size: .7em;
 }
 
 
+// tablet 
+@media screen and (max-width: 1024px){
+    // header 
+    header{
+        .input{
+            display: none;
+        }
+        .header-right{
+            display: none;
+        }
+        section.navbars{
+            display: none;
+        }
+        .header-logo{
+            display: flex;
+            margin: 0 auto;
+        }
+        .burger-menu{
+            display: flex !important; 
+            i{
+                font-size: 1.7em;
+                color: $white;
+            }
+        }
+        .header{
+            .nav-list{
+                display: flex !important;
+                .nav{
+                    position: absolute;
+                    flex-direction: column;
+                    background-color: $helperColor;
+                    z-index: 99;
+                    width: 70%;
+                    color: #000;
+                    left: -70%;
+                    text-align: center;
+                    transition: all 1s ease;
+                    top: 7.4%;
+                    padding: 1em 0;
+                    border-radius: 0 0px 20px 0;
+                    border-bottom: 2px solid #000;
+                    border-right: 2px solid #000;
+                    li{
+                        a{
+                            font-size: 1.7em;
+                            color: $white;
+                        }
+                        &:not(:last-child){
+                            margin-bottom: 32px;
+                        }
+                    }
+    
+                    &.active{
+                        left: 0;
+                    }
+                }
+            }
+        }   
 
+
+        .burger-menu {
+            display: block;
+        }
+
+        .burger-menu.active .nav-list{
+            background-color: red;
+        }
+    }
+
+    // slider 
+    section.slider{
+        // background-position: ce;
+        > div{
+            margin: 0;
+            // padding: 0;
+            margin-left: 100px;
+        }
+
+        .container {
+            .dots{
+                .dot{
+                    left: 45%;
+
+                    &:last-child{
+                        left: 51%;
+                    }
+                }
+            }
+        }
+    }
+    section.section-icons{
+        .container{
+            .flex.align-center{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
+    section.section-deals{
+        .container{
+            align-items: center;
+            justify-content:start;
+            gap: 75px;
+        }
+        .left-side{
+            max-width: 492px;
+            .content{
+                >div{
+                    &:nth-child(3), &:nth-child(4){
+                        display: none;
+                    }
+                }  
+            }
+        }
+        .right-side{
+            max-width: 102px;
+        }
+        .content{
+            max-width: 492px;
+        }
+    }
+    section.section-popular-books{
+        .left-side{
+            width: auto;
+        }
+    }
+    section.section-all-categories{
+        .row{
+            justify-content: center;
+        }
+        .right-side{
+            .content{
+                justify-content: center;
+                >div{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    section.section-order .container > div button {
+        right: 18.5%;
+    }
+        
+}
 
 //mobile
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
 
     // header 
     header{
@@ -640,7 +725,7 @@ section.section-order{
                 background-color: red;
             }
 
-        }
+    }
 
 
     // slider 
@@ -750,6 +835,11 @@ section.section-order{
                         width: 150px;
                         height: 210px;
                     }
+                    >div{
+                        &:last-child{
+                            display: flex;
+                        }
+                    }
                 }
             }
         }
@@ -784,108 +874,3 @@ section.section-order{
     }
 }
 
-@media (max-width: 1024px){
-    // header 
-    header{
-        .input{
-            display: none;
-        }
-        .header-right{
-            display: none;
-        }
-        section.navbars{
-            display: none;
-        }
-        .header-logo{
-            display: flex;
-            margin: 0 auto;
-        }
-        .burger-menu{
-            display: flex !important; 
-            i{
-                font-size: 1.7em;
-                color: $white;
-            }
-        }
-        .header{
-            .nav-list{
-                display: flex !important;
-                .nav{
-                    position: absolute;
-                    flex-direction: column;
-                    background-color: $helperColor;
-                    z-index: 99;
-                    width: 70%;
-                    color: #000;
-                    left: -70%;
-                    text-align: center;
-                    transition: all 1s ease;
-                    top: 7.4%;
-                    padding: 2em 0;
-                    border-radius: 0 0px 20px 0;
-                    border-bottom: 2px solid #000;
-                    border-right: 2px solid #000;
-                    li{
-                        a{
-                            font-size: 1.7em;
-                            color: $white;
-                        }
-                        &:not(:last-child){
-                            margin-bottom: 36px;
-                        }
-                    }
-    
-                    &.active{
-                        left: 0;
-                    }
-                }
-            }
-        }   
-
-
-        .burger-menu {
-            display: block;
-        }
-
-        .burger-menu.active .nav-list{
-            background-color: red;
-        }
-    }
-
-    // slider 
-    section.slider{
-        // background-position: ce;
-        > div{
-            margin: 0;
-            // padding: 0;
-            margin-left: 100px;
-        }
-
-        .container {
-            .dots{
-                .dot{
-                    left: 45%;
-
-                    &:last-child{
-                        left: 51%;
-                    }
-                }
-            }
-        }
-    }
-    section.section-icons{
-        .container{
-            .flex.align-center{
-                &:last-child{
-                    display: none;
-                }
-            }
-        }
-    }
-    section.section-deals{
-        .content{
-            max-width: 492px;
-        }
-    }
-        
-}
