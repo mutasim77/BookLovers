@@ -782,10 +782,10 @@ section.section-order .container > div button:hover {
     font-size: 1.7em;
     color: #fff;
   }
-  header .nav-list {
+  header .header .nav-list {
     display: flex !important;
   }
-  header .nav-list .nav {
+  header .header .nav-list .nav {
     position: absolute;
     flex-direction: column;
     background-color: #f65d4e;
@@ -800,15 +800,16 @@ section.section-order .container > div button:hover {
     border-radius: 0 0px 20px 0;
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
+    border-top: 2px solid #000;
   }
-  header .nav-list .nav li a {
+  header .header .nav-list .nav li a {
     font-size: 1.7em;
     color: #fff;
   }
-  header .nav-list .nav li:not(:last-child) {
+  header .header .nav-list .nav li:not(:last-child) {
     margin-bottom: 36px;
   }
-  header .nav-list .nav.active {
+  header .header .nav-list .nav.active {
     left: 0;
   }
   header .burger-menu {
@@ -826,6 +827,9 @@ section.section-order .container > div button:hover {
   section.slider .container .dots .dot:last-child {
     left: 57%;
   }
+  section.section-deals .left-side .content > div {
+    justify-content: center;
+  }
   section.section-categories .categories .flex {
     flex-wrap: wrap;
   }
@@ -835,6 +839,9 @@ section.section-order .container > div button:hover {
   section.section-popular-books .right-side h1 {
     margin: 20px 0;
     text-align: center;
+  }
+  section.section-popular-books .right-side h1::after {
+    display: none;
   }
   section.section-popular-books .right-side .content img {
     max-width: 140px;
@@ -870,6 +877,9 @@ section.section-order .container > div button:hover {
     font-weight: 600;
     font-size: 1.7em;
   }
+  section.section-all-categories .row .right-side .content {
+    justify-content: center;
+  }
   section.section-all-categories .row .right-side .content img {
     width: 150px;
     height: 210px;
@@ -890,6 +900,79 @@ section.section-order .container > div button:hover {
   }
   section.section-order .container > div button {
     right: 4.5%;
+  }
+}
+@media (max-width: 1024px) {
+  header .input {
+    display: none;
+  }
+  header .header-right {
+    display: none;
+  }
+  header section.navbars {
+    display: none;
+  }
+  header .header-logo {
+    display: flex;
+    margin: 0 auto;
+  }
+  header .burger-menu {
+    display: flex !important;
+  }
+  header .burger-menu i {
+    font-size: 1.7em;
+    color: #fff;
+  }
+  header .header .nav-list {
+    display: flex !important;
+  }
+  header .header .nav-list .nav {
+    position: absolute;
+    flex-direction: column;
+    background-color: #f65d4e;
+    z-index: 99;
+    width: 70%;
+    color: #000;
+    left: -70%;
+    text-align: center;
+    transition: all 1s ease;
+    top: 7.4%;
+    padding: 2em 0;
+    border-radius: 0 0px 20px 0;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+  header .header .nav-list .nav li a {
+    font-size: 1.7em;
+    color: #fff;
+  }
+  header .header .nav-list .nav li:not(:last-child) {
+    margin-bottom: 36px;
+  }
+  header .header .nav-list .nav.active {
+    left: 0;
+  }
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu.active .nav-list {
+    background-color: red;
+  }
+  section.slider > div {
+    margin: 0;
+    margin-left: 100px;
+  }
+  section.slider .container .dots .dot {
+    left: 45%;
+  }
+  section.slider .container .dots .dot:last-child {
+    left: 51%;
+  }
+  section.section-icons .container .flex.align-center:last-child {
+    display: none;
+  }
+  section.section-deals .content {
+    max-width: 492px;
   }
 }
 * {
