@@ -596,8 +596,38 @@ section.section-order{
             }
         }   
         .nav-list{
-            // display: flex !important;
+            display: flex !important;
+            .nav{
+                position: absolute;
+                flex-direction: column;
+                background-color: $helperColor;
+                z-index: 99;
+                width: 70%;
+                color: #000;
+                left: -70%;
+                text-align: center;
+                transition: all 1s ease;
+                top: 8.9%;
+                padding: 2em 0;
+                border-radius: 0 0px 20px 0;
+                border-bottom: 2px solid #000;
+                border-right: 2px solid #000;
+                li{
+                    a{
+                        font-size: 1.7em;
+                        color: $white;
+                    }
+                    &:not(:last-child){
+                        margin-bottom: 36px;
+                    }
+                }
+
+                &.active{
+                    left: 0;
+                }
+            }
         }
+
         .burger-menu {
             display: block;
         }

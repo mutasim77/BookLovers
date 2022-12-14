@@ -782,6 +782,35 @@ section.section-order .container > div button:hover {
     font-size: 1.7em;
     color: #fff;
   }
+  header .nav-list {
+    display: flex !important;
+  }
+  header .nav-list .nav {
+    position: absolute;
+    flex-direction: column;
+    background-color: #f65d4e;
+    z-index: 99;
+    width: 70%;
+    color: #000;
+    left: -70%;
+    text-align: center;
+    transition: all 1s ease;
+    top: 8.9%;
+    padding: 2em 0;
+    border-radius: 0 0px 20px 0;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+  header .nav-list .nav li a {
+    font-size: 1.7em;
+    color: #fff;
+  }
+  header .nav-list .nav li:not(:last-child) {
+    margin-bottom: 36px;
+  }
+  header .nav-list .nav.active {
+    left: 0;
+  }
   header .burger-menu {
     display: block;
   }
