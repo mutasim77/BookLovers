@@ -9,12 +9,11 @@ btn.forEach(item => {
 
 //! MenuBar -> mobile, tablet adaptation;
 $('.burger-menu').on('click', () => {
-    console.log('Hello');
     $('#show-menu').toggleClass('active');
 })
 
 
-
+//!Animataion AOS
 AOS.init({
     duration: 700
 });
