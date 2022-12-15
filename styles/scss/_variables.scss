@@ -141,6 +141,25 @@ $bannerColor : #f0f0f0;
 @mixin bannerName{
     padding: 70px 0;
     background-color: $bannerColor;
-    font-size: 3.5em;
-    font-weight: 600;
+
+    h1{
+        font-size: 3.5em;
+        font-weight: 600;
+    }
+    p, a, i{
+        font-size: .8em;
+    }
+    i{
+        margin: 0 10px;
+    }
+    a{
+        color: #999;
+
+        &:hover{
+            color: #000;
+        }
+    }
+    p{
+        color: $helperColor;
+    }
 }

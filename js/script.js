@@ -10,6 +10,7 @@ btn.forEach(item => {
 
 //! MenuBar -> mobile, tablet adaptation;
 $('.burger-menu').on('click', () => {
+    $('body').toggleClass('hide');
     $('#show-menu').toggleClass('active');
 })
 

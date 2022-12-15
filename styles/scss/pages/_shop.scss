@@ -1,3 +1,70 @@
+// banner name 
 section.banner-name{
     @include bannerName();
+    margin-bottom: 100px;
+    
+}
+
+// card books 
+section.card-books{
+    margin: 100px 0;
+    .right-side{
+        width: 100%;
+        max-width: 1200px;
+        margin:  0 auto;
+        .content{
+            img{
+                max-width: 200px;
+                border-radius: 15px;
+            }
+            @include contenInfo();
+
+            > div{
+                padding: 0 8px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+// mobile screen 
+@media screen and (max-width: 747px) {
+    section.banner-name{
+        text-align: center;
+        .container{
+            display: inline-block;
+            h1{
+                margin-bottom: 25px;
+            }
+            >div{
+                margin-left: 17px;
+            }
+        }
+    }
+    section.card-books{
+        .right-side{
+            .content{
+                gap: 25px;
+                img{
+                    max-width: 140px;
+                }
+                h4{
+                    font-size: 1em;
+                    max-width: 162px;
+                    font-size: .8em;
+                }
+                > div{
+                    padding: 0;
+                    padding-bottom: 20px;
+                }
+                .content-info{
+                    text-align: center;
+                }
+    
+            }
+        }
+    }
 }

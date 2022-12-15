@@ -21,6 +21,10 @@ body{
     color: $fontColor;
 }
 
+body.hide{
+    overflow: hidden;
+}
+
 .section-icons, 
 .section-deals, 
 .section-categories, 
