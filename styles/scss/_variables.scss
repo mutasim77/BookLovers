@@ -4,6 +4,7 @@ $helperColor : #f65d4e;
 $white : #fff;
 $black : #000;
 $footerColor : #282828;
+$bannerColor : #f0f0f0;
 
 .flex{
     display: flex;
@@ -134,4 +135,12 @@ $footerColor : #282828;
             left: 0;
         }
     }
+}
+
+
+@mixin bannerName{
+    padding: 70px 0;
+    background-color: $bannerColor;
+    font-size: 3.5em;
+    font-weight: 600;
 }

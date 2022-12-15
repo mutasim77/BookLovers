@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97543b6a54.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,11 +20,27 @@
         <div class="header">
             <div class="container">
                 <div class="flex align-center justify-between">
+
+                    <nav class="nav-list">
+                        <ul class="nav flex justify-between" id="show-menu">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./storelist.html">StoreList</a></li>
+                            <li><a href="./authors.html">Authors</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                        <div class="burger-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
                     <div class="header-logo">
                         <a href="../html/home.html" class="flex align-center"><img src="../img/logo.png"
-                                alt="logo">BookLover</a>
+                                alt="logo">BookLovers</a>
                     </div>
-                    <div class="input">
+                    <div class="input" id="search-books">
                         <input type="text" placeholder="Search Books...">
                         <button><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
@@ -31,7 +49,6 @@
                         <i class="fa fa-solid fa-heart"></i>
                         <i class="fa fa-sharp fa-solid fa-cart-plus"></i>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -63,12 +80,20 @@
         </section>
     </header>
 
+    <section class="banner-name">
+        <div class="container">
+            <h1>Shop</h1>
+        </div>
+    </section>
 
 
+
+
+    <!-- scripts  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
 </body>
 
 </html>
