@@ -1122,14 +1122,21 @@ section.total-stores .container {
   color: #444;
 }
 
+section.all-shops {
+  margin-bottom: 100px;
+}
 section.all-shops .shop-card {
-  max-width: 410px;
+  max-width: 400px;
   min-height: 240px;
   background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
   cursor: pointer;
+  margin-bottom: 25px;
+}
+section.all-shops .shop-card:not(:last-child) {
+  margin-right: 20px;
 }
 section.all-shops .shop-card:hover .shop-card-img::after {
   z-index: -1;
@@ -1163,7 +1170,7 @@ section.all-shops .shop-card .shop-card-info {
   top: 0;
   color: #000;
   padding: 35px 40px;
-  z-index: 999;
+  z-index: 98;
   transition: all 1ms ease;
 }
 section.all-shops .shop-card .shop-card-info::after {
@@ -1207,6 +1214,25 @@ section.all-shops .shop-card .logo img {
   border: 2px solid #999;
 }
 
+@media screen and (max-width: 767px) {
+  .shop-card-img::after {
+    height: 115% !important;
+  }
+  .shop-card-info::after {
+    height: 85% !important;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  section.all-shops .shop-card {
+    max-width: 349px;
+  }
+  section.all-shops .shop-card-img::after {
+    height: 115% !important;
+  }
+  section.all-shops .shop-card-info::after {
+    height: 87% !important;
+  }
+}
 * {
   transition: all 0.5s ease;
 }

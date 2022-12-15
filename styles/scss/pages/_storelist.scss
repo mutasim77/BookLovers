@@ -10,14 +10,19 @@ section.total-stores{
 
 // show and hide cards animatation 
 section.all-shops{
+    margin-bottom: 100px;
     .shop-card{
-        max-width: 410px;
+        max-width: 400px;
         min-height: 240px;
         background-color: $white;
         box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
         border-radius: 20px;
         position: relative;
         cursor: pointer;
+        margin-bottom: 25px;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
 
         &:hover{
             .shop-card-img{
@@ -58,7 +63,7 @@ section.all-shops{
             top: 0;
             color: $black;
             padding: 35px 40px;
-            z-index: 999;
+            z-index: 98;
             transition: all 1ms ease;
             
             &::after{
@@ -103,6 +108,38 @@ section.all-shops{
             img{
                 border-radius: 20px;
                 border: 2px solid #999;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .shop-card-img{
+        &::after{
+            height: 115% !important;
+        }
+    }
+    .shop-card-info{
+        &::after{
+            height: 85% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    section.all-shops{
+        .shop-card{
+            max-width: 349px;
+        }
+
+        .shop-card-img{
+            &::after{
+                height: 115% !important;
+            }
+        }
+        .shop-card-info{
+            &::after{
+                height: 87% !important;
             }
         }
     }
