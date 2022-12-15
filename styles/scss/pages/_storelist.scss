@@ -1,0 +1,18 @@
+section.total-stores{
+    .container{
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+        color: #444;
+    }
+}
+
+section.all-shops{
+    .shop-card{
+        max-width: 410px;
+        min-height: 240px;
+        background-color: $white;
+        box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+        border-radius: 20px;
+    }
+}

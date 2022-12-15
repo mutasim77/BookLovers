@@ -1112,6 +1112,21 @@ section.card-books .right-side .content > div {
     text-align: center;
   }
 }
+section.total-stores .container {
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #444;
+}
+
+section.all-shops .shop-card {
+  max-width: 410px;
+  min-height: 240px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
 * {
   transition: all 0.5s ease;
 }
