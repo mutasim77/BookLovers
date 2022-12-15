@@ -1112,6 +1112,9 @@ section.card-books .right-side .content > div {
     text-align: center;
   }
 }
+section.total-stores {
+  margin-bottom: 50px;
+}
 section.total-stores .container {
   padding: 15px 30px;
   border-radius: 10px;
@@ -1125,6 +1128,83 @@ section.all-shops .shop-card {
   background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+section.all-shops .shop-card:hover .shop-card-img::after {
+  z-index: -1;
+}
+section.all-shops .shop-card:hover .shop-card-info {
+  color: #fff;
+}
+section.all-shops .shop-card:hover .shop-card-info::after {
+  display: block;
+}
+section.all-shops .shop-card .shop-card-img {
+  position: relative;
+}
+section.all-shops .shop-card .shop-card-img img {
+  border-radius: 20px 20px 0 0;
+  opacity: 0.8;
+}
+section.all-shops .shop-card .shop-card-img::after {
+  content: "";
+  position: absolute;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  z-index: 20;
+}
+section.all-shops .shop-card .shop-card-info {
+  position: absolute;
+  top: 0;
+  color: #000;
+  padding: 35px 40px;
+  z-index: 999;
+  transition: all 1ms ease;
+}
+section.all-shops .shop-card .shop-card-info::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 94%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  display: none;
+  z-index: -1;
+}
+section.all-shops .shop-card .shop-card-info h1 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+section.all-shops .shop-card .shop-card-info .stars {
+  margin-top: 20px;
+}
+section.all-shops .shop-card .shop-card-info .stars i {
+  color: #fa8c17;
+}
+section.all-shops .shop-card .shop-card-info p {
+  margin-top: 15px;
+}
+section.all-shops .shop-card .shop-card-info i, section.all-shops .shop-card .shop-card-info p {
+  font-size: 0.8em;
+}
+section.all-shops .shop-card .logo {
+  text-align: end;
+  padding: 20px 20px 20px 0;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  z-index: 999;
+}
+section.all-shops .shop-card .logo img {
+  border-radius: 20px;
+  border: 2px solid #999;
 }
 
 * {
