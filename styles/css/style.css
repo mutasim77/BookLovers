@@ -1023,6 +1023,10 @@ section.section-order .container > div button:hover {
   transition: all 0.5s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Sora", sans-serif;
   background-color: #fff;

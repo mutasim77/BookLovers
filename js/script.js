@@ -1,5 +1,6 @@
 'use strict';
 import { slider } from "./Helpers/slider.js";
+import { timer } from "./Helpers/utils.js";
 
 //! Change Sliders By Clicking 
 let btn = document.querySelectorAll('.dot');
@@ -11,6 +12,9 @@ btn.forEach(item => {
 $('.burger-menu').on('click', () => {
     $('#show-menu').toggleClass('active');
 })
+
+//!timer -> for Home 
+timer();
 
 
 //!Animataion AOS
