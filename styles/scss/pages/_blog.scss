@@ -1,7 +1,6 @@
 section.all-blogs{
     .left-side, .right-side{
         width: 100%;
-        // border: 1px solid #000;
         border-radius: 7px;
     }
 
@@ -46,5 +45,7 @@ section.all-blogs{
 
     .right-side{
         max-width: 360px;
+        border: 1px solid #000;
+        padding: 10px;
     }
 }

@@ -1362,6 +1362,8 @@ section.all-blogs .left-side article::after {
 }
 section.all-blogs .right-side {
   max-width: 360px;
+  border: 1px solid #000;
+  padding: 10px;
 }
 
 * {
