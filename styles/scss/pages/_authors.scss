@@ -90,13 +90,38 @@ section.section-authors{
 }
 
 
+//tablet
+@media screen and (max-width: 1024px) {
+    section.section-authors{
+        > div {
+            > div{
+                justify-content: center;
+                .author-block{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
+    section.on-sale{
+        .hi-slide{
+            .hi-next, .hi-prev{
+                display: none;
+            }
+        }
+    }
+}
 
 // mobile 
 @media screen and(max-width: 767px) {
     section.on-sale{
         .container{
             overflow: hidden;
+        }
+        h1 {
+            margin-bottom: 40px;
         }
 
         .hi-slide{
@@ -105,6 +130,16 @@ section.section-authors{
             }
             left: -200px;
             margin: 0;
+        }
+    }
+    section.section-authors{
+        .container{
+            .author-block{
+                width: 180px;
+                &:last-child{
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -1311,9 +1311,23 @@ section.section-authors .content .author-block p {
   color: #999;
 }
 
+@media screen and (max-width: 1024px) {
+  section.section-authors > div > div {
+    justify-content: center;
+  }
+  section.section-authors > div > div .author-block:last-child {
+    display: none;
+  }
+  section.on-sale .hi-slide .hi-next, section.on-sale .hi-slide .hi-prev {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   section.on-sale .container {
     overflow: hidden;
+  }
+  section.on-sale h1 {
+    margin-bottom: 40px;
   }
   section.on-sale .hi-slide {
     left: -200px;
@@ -1321,6 +1335,12 @@ section.section-authors .content .author-block p {
   }
   section.on-sale .hi-slide .hi-next, section.on-sale .hi-slide .hi-prev {
     display: none;
+  }
+  section.section-authors .container .author-block {
+    width: 180px;
+  }
+  section.section-authors .container .author-block:last-child {
+    display: block;
   }
 }
 section.all-blogs .left-side, section.all-blogs .right-side {
