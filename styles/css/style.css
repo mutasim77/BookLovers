@@ -1238,6 +1238,7 @@ section.on-sale h1 {
   font-weight: 600;
   position: relative;
   cursor: pointer;
+  display: inline-block;
 }
 section.on-sale h1::after {
   content: "";
@@ -1266,6 +1267,48 @@ section.on-sale .hi-next, section.on-sale .hi-prev {
   border-radius: 15px;
   line-height: 50px;
   background-color: red;
+}
+
+section.section-authors {
+  margin: 100px 0;
+}
+section.section-authors h1 {
+  display: inline-block;
+  font-size: 0.9em;
+  margin-bottom: 50px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+section.section-authors h1::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f65d4e;
+  transition: all 0.3s ease;
+}
+section.section-authors .content .author-block {
+  width: 210px;
+  text-align: center;
+  padding: 20px;
+}
+section.section-authors .content .author-block img {
+  width: 90px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+section.section-authors .content .author-block h3 {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  margin: 20px 0 10px 0;
+}
+section.section-authors .content .author-block p {
+  font-size: 0.7em;
+  color: #999;
 }
 
 @media screen and (max-width: 767px) {
