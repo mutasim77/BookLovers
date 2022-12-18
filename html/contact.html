@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97543b6a54.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,11 +20,27 @@
         <div class="header">
             <div class="container">
                 <div class="flex align-center justify-between">
+
+                    <nav class="nav-list">
+                        <ul class="nav flex justify-between" id="show-menu">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./storelist.html">StoreList</a></li>
+                            <li><a href="./authors.html">Authors</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                        <div class="burger-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
                     <div class="header-logo">
                         <a href="../html/home.html" class="flex align-center"><img src="../img/logo.png"
-                                alt="logo">BookLover</a>
+                                alt="logo">BookLovers</a>
                     </div>
-                    <div class="input">
+                    <div class="input" id="search-books">
                         <input type="text" placeholder="Search Books...">
                         <button><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
@@ -31,7 +49,6 @@
                         <i class="fa fa-solid fa-heart"></i>
                         <i class="fa fa-sharp fa-solid fa-cart-plus"></i>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -63,14 +80,156 @@
         </section>
     </header>
 
+    <!-- banner name   -->
+    <section class="banner-name">
+        <div class="container flex align-center justify-between">
+            <h1>Contact</h1>
+            <div class="flex">
+                <a href="home.html">HOME</a>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <p>Contact</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section contact us  -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="flex justify-between flex-wrap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46533.244026375156!2d76.82251685820309!3d43.2026145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883689433766f49%3A0x66f7eb946908e6fa!2z0JzQldCb0J7QnNCQ0J0tTUFSV0lOINCi0KDQpiDCq01FR0EgQWxtYS1BdGHCuw!5e0!3m2!1sru!2skz!4v1671367911449!5m2!1sru!2skz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="forms flex flex-column">
+                    <h2>We Would Love To Hear From You.</h2>
+                    <p>Your email address will not be published.</p>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section our book store  -->
+    <section class="our-book-store">
+        <div class="container">
+            <h1>Our Book Store</h1>
+            <div class="content flex justify-between flex-wrap">
+                <div class="flex flex-column" data-aos="flip-down">
+                    <img src="/img/storelist/3.jpeg" alt="">
+                    <div class="info">
+                        <h3>Almaty</h3>
+                        <p>101, Dostyk Ave, corner of Kurmangazy, Almaty, Kazakhstan</p>
+                        <h4>Working Hours</h4>
+                        <p>
+                            Open: 8:00AM – Close: 18:00PM <br>
+                            Saturday – Sunday: Close
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-column" data-aos="flip-up">
+                    <img src="/img/storelist/5.jpeg" alt="">
+                    <div class="info">
+                        <h3>Astana</h3>
+                        <p>Qabanbay Batyr Ave 21, Astana 020000, Kazakhstan.</p>
+                        <h4>Working Hours</h4>
+                        <p>
+                            Open: 8:00AM – Close: 18:00PM <br>
+                            Saturday – Sunday: Close
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-column" data-aos="flip-down">
+                    <img src="/img/storelist/8.jpeg" alt="">
+                    <div class="info">
+                        <h3>Shymkent</h3>
+                        <p>Address. Zh. Tynybaev St, Shymkent, Kazakhstan</p>
+                        <h4>Working Hours</h4>
+                        <p>
+                            Open: 8:00AM – Close: 18:00PM <br>
+                            Saturday – Sunday: Close
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container flex flex-column">
+            <div class="padding-80 flex flex-wrap justify-between">
+                <div class="flex flex-column">
+                    <h1>Contact Info</h1>
+                    <p>1418 River Drive, Suite 35 <br>
+                        Cottonhall, CA 9622
+                    </p>
+                    <p>
+                        Monday – Friday: 9:00-20:00 <br>
+                        Saturday: 11:00 – 15:00
+                    </p>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="storelist.html">StoreList</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column align-center">
+                    <div class="logo flex align-center">
+                        <img src="/img/logo.png" alt="" width="50px"> BookLovers
+                    </div>
+                    <p>Got Questions ? Call us 24/7!</p>
+                    <h1 class="numbers">+1 (246) 247 - 5287</h1>
+                    <div class="flex justify-center gap-5 social-media">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter""></i></a>
+                            <a href=" https://www.instagram.com/" target="_blank"><i class=" fa fa-instagram"></i></a>
+                        <a href="https://ru.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Corporate</h1>
+                    <ul>
+                        <li> <a href="storelist.html">Vendors</a></li>
+                        <li> <a href="home.html">Deals Of Weak</a></li>
+                        <li><a href="storelist.html">Our Suppliers</a></li>
+                        <li> <a href="home.html">Popular Books</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Our Service</h1>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="about.html">Returns</a></li>
+                        <li><a href="shop.html">Product</a></li>
+                        <li><a href="faq.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-between text-center">
+                <div>Copyright © 2022 <span>Mutasim</span>. All rights reserved.</div>
+                <img src="/img/payments.png" alt="">
+            </div>
+        </div>
+    </footer>
 
 
+    <!-- scripts  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,156 @@
+section.contact-us{
+    > div{
+        > div{
+            position: relative;
+            padding-bottom: 50px;
+            iframe{
+                width: 100%;
+                max-width: 600px;
+                border-radius: 20px;
+            }
+            .forms{
+                width: 100%;
+                max-width: 600px;
+                h2{
+                    font-size: 1.7em;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: .8em;
+                    color: #999;
+                    letter-spacing: 1px;
+                    margin: 15px 0;
+                }
+                input{
+                    border: 1px solid #999;
+                    padding: 15px 0px 15px 20px;
+                    border-radius: 50px;
+                    margin-bottom: 25px;
+                }
+                textarea{
+                    width: 100%;
+                    height: 121px;
+                    border-radius: 20px;
+                    resize: none;
+                    padding: 15px 0 0 20px;
+                    border: 1px solid #999;
+
+                    &:is(:active, :focus){
+                        outline: none;
+                    }
+                }
+                input, textarea{
+                    &:is(:focus){
+                        border-color: $helperColor;
+                    }
+                }
+                ::placeholder{
+                    font-size: .9em;
+                }
+
+                button{
+                    width: 25%;
+                    margin-top: 20px;
+                    padding: 15px 0;
+                    background-color: $helperColor;
+                    border-radius: 50px;
+                    box-shadow: 2px 2px 5px $black;
+                    color: $white;
+                    font-weight: 500;
+                    &:active{
+                        box-shadow: 0px 0px 0px 0;
+                    }
+                }
+            }
+
+            // line 
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #999;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+// section our book store 
+section.our-book-store{
+    margin: 100px 0;
+    h1{
+        font-size: 1.7em;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .content{
+        div{
+            padding: 10px;
+            max-width: 420px;
+            img{
+                border-radius: 15px;
+            }
+            .info{
+                h3{
+                    font-size: 1.3em;
+                    font-weight: 500;
+                }
+                h3,h4{
+                    margin: 10px 0;
+                }
+                h4{
+                    margin-top: 25px;
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: .8em;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+// mobile 
+@media screen and(max-width: 767px) {
+    section.contact-us{
+        .forms{
+            text-align: center;
+            h2{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+
+//tablet
+@media screen and (max-width: 1024px){
+    section.contact-us{
+        > div{
+             > div{
+                justify-content: center;
+                 > div{
+                    margin-top: 50px;
+                    text-align: center;
+                 }
+             }
+        }
+    }
+    section.our-book-store{
+        .container{
+            .content{
+                justify-content: center;
+                > div{
+                    &:not(:last-child){
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
