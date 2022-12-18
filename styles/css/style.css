@@ -1323,6 +1323,47 @@ section.section-authors .content .author-block p {
     display: none;
   }
 }
+section.all-blogs .left-side, section.all-blogs .right-side {
+  width: 100%;
+  border-radius: 7px;
+}
+section.all-blogs .left-side {
+  max-width: 860px;
+}
+section.all-blogs .left-side article {
+  position: relative;
+  margin-bottom: 100px;
+}
+section.all-blogs .left-side article img {
+  border-radius: 7px;
+}
+section.all-blogs .left-side article div, section.all-blogs .left-side article p {
+  color: #999;
+  letter-spacing: 1.3px;
+  font-size: 0.8em;
+}
+section.all-blogs .left-side article > div {
+  margin: 15px 0;
+}
+section.all-blogs .left-side article h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+section.all-blogs .left-side article p {
+  color: #444;
+  padding: 20px 0 45px 0;
+}
+section.all-blogs .left-side article::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+}
+section.all-blogs .right-side {
+  max-width: 360px;
+}
+
 * {
   transition: all 0.5s ease;
 }
