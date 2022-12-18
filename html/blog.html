@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97543b6a54.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -90,13 +92,26 @@
         </div>
     </section>
 
+    <!-- section quotes  -->
+    <section class="quotes">
+        <div class="container">
+            <div>
+                <h2>Quotes of the day:</h2>
 
+                <q>Just one small positive thought in the morning can change your whole day.</q>
+                <button>Change Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- all blogs  -->
     <section class="all-blogs">
         <div class="container">
             <div class="flex justify-between flex-wrap">
+                <!-- left side  -->
                 <div class="left-side">
                     <!-- acriticle 1 -->
-                    <article>
+                    <article id="article1">
                         <img src="/img/Blogs/1.jpeg" alt="BlogPicture">
                         <div>DECEMBER 14, 2022 / BY SUSAN OBSORNE</div>
                         <h2>Books to Look Out For Out for in January 2023</h2>
@@ -109,7 +124,7 @@
                         </p>
                     </article>
                     <!-- acriticle 2 -->
-                    <article data-aos="zoom-in">
+                    <article id="article2">
                         <img src="/img/Blogs/2.jpeg" alt="BlogPicture">
                         <div>DECEMBER 20, 2022 / BY ADMIN</div>
                         <h2>Books of the Year 2022</h2>
@@ -125,7 +140,7 @@
                         </p>
                     </article>
                     <!-- acriticle 3 -->
-                    <article data-aos="zoom-out">
+                    <article id="article3">
                         <img src="/img/Blogs/3.jpeg" alt="BlogPicture">
                         <div>NOVEMBER 18, 2022 / BY KARLA NEWMAN</div>
                         <h2>Six Degrees of Separation – The Snow Child to Weasels in the Attic</h2>
@@ -142,7 +157,7 @@
                         </p>
                     </article>
                     <!-- acriticle 4 -->
-                    <article data-aos="zoom-in">
+                    <article id="article4">
                         <img src="/img/Blogs/4.jpeg" alt="BlogPicture">
                         <div>NOVEMBER 2, 2022 / BY SUZANNE CASEY</div>
                         <h2>Five Swedish Novels I’ve Read</h2>
@@ -156,7 +171,7 @@
                         </p>
                     </article>
                     <!-- acriticle 5 -->
-                    <article data-aos="zoom-out">
+                    <article id="article5">
                         <img src="/img/Blogs/5.jpeg" alt="BlogPicture">
                         <div>DECEMBER 5, 2022 / BY JESSICA MUNOZ</div>
                         <h2>Dinosaurs: A Novel by Lydia Millet: "You can do your best all your life"</h2>
@@ -174,15 +189,44 @@
                         </p>
                     </article>
                 </div>
+                <!-- right side  -->
                 <div class="right-side">
                     <h2>Recent Posts</h2>
                     <div class="flex flex-column">
 
-                        <div class="flex">
-                            <img src="/img/Blogs/1.jpeg" alt="BlogPicture">
+                        <div class="info flex align-center">
+                            <a href="#article1"><img src="/img/Blogs/1.jpeg" alt="BlogPicture"></a>
                             <div class="flex flex-column">
                                 <p>DECEMBER 14, 2022</p>
                                 <h3>Books to Look Out For Out for in January 2023</h3>
+                            </div>
+                        </div>
+                        <div class="info flex align-center">
+                            <a href="#article2"><img src="/img/Blogs/2.jpeg" alt="BlogPicture"></a>
+                            <div class="flex flex-column">
+                                <p>DECEMBER 20, 2022</p>
+                                <h3>Books of the Year 2022</h3>
+                            </div>
+                        </div>
+                        <div class="info flex align-center">
+                            <a href="#article3"><img src="/img/Blogs/3.jpeg" alt="BlogPicture"></a>
+                            <div class="flex flex-column">
+                                <p>NOVEMBER 18, 2022</p>
+                                <h3>Six Degrees of Separation – The Snow Child to Weasels in the Attic</h3>
+                            </div>
+                        </div>
+                        <div class="info flex align-center">
+                            <a href="#article4"><img src="/img/Blogs/4.jpeg" alt="BlogPicture"></a>
+                            <div class="flex flex-column">
+                                <p>NOVEMBER 2, 2022</p>
+                                <h3>Five Swedish Novels I’ve Read</h3>
+                            </div>
+                        </div>
+                        <div class="info flex align-center">
+                            <a href="#article5"><img src="/img/Blogs/5.jpeg" alt="BlogPicture"></a>
+                            <div class="flex flex-column">
+                                <p>DECEMBER 5, 2022</p>
+                                <h3>Dinosaurs: A Novel by Lydia Millet: "You can do your best all your life"</h3>
                             </div>
                         </div>
 
@@ -192,7 +236,72 @@
         </div>
     </section>
 
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container flex flex-column">
+            <div class="padding-80 flex flex-wrap justify-between">
+                <div class="flex flex-column">
+                    <h1>Contact Info</h1>
+                    <p>1418 River Drive, Suite 35 <br>
+                        Cottonhall, CA 9622
+                    </p>
+                    <p>
+                        Monday – Friday: 9:00-20:00 <br>
+                        Saturday: 11:00 – 15:00
+                    </p>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="storelist.html">StoreList</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column align-center">
+                    <div class="logo flex align-center">
+                        <img src="/img/logo.png" alt="" width="50px"> BookLovers
+                    </div>
+                    <p>Got Questions ? Call us 24/7!</p>
+                    <h1 class="numbers">+1 (246) 247 - 5287</h1>
+                    <div class="flex justify-center gap-5 social-media">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter""></i></a>
+                                <a href=" https://www.instagram.com/" target="_blank"><i
+                                    class=" fa fa-instagram"></i></a>
+                        <a href="https://ru.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Corporate</h1>
+                    <ul>
+                        <li> <a href="storelist.html">Vendors</a></li>
+                        <li> <a href="home.html">Deals Of Weak</a></li>
+                        <li><a href="storelist.html">Our Suppliers</a></li>
+                        <li> <a href="home.html">Popular Books</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Our Service</h1>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="about.html">Returns</a></li>
+                        <li><a href="shop.html">Product</a></li>
+                        <li><a href="faq.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="flex flex-wrap justify-between text-center">
+                <div>Copyright © 2022 <span>Mutasim</span>. All rights reserved.</div>
+                <img src="/img/payments.png" alt="">
+            </div>
+        </div>
+    </footer>
 
 
     <!-- scripts  -->

@@ -1353,7 +1353,7 @@ section.all-blogs .left-side article p {
   color: #444;
   padding: 20px 0 45px 0;
 }
-section.all-blogs .left-side article::after {
+section.all-blogs .left-side article:not(:last-child)::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1362,10 +1362,103 @@ section.all-blogs .left-side article::after {
 }
 section.all-blogs .right-side {
   max-width: 360px;
-  border: 1px solid #000;
-  padding: 10px;
+}
+section.all-blogs .right-side h2 {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+section.all-blogs .right-side h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #f65d4e;
+  left: 0;
+  bottom: -2px;
+}
+section.all-blogs .right-side > div {
+  border: 1px solid #999;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+section.all-blogs .right-side .info:not(:first-child) {
+  margin-top: 25px;
+}
+section.all-blogs .right-side .info a {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+section.all-blogs .right-side .info a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+section.all-blogs .right-side .info > div {
+  width: 100%;
+  max-width: 200px;
+  line-height: 1.5;
+}
+section.all-blogs .right-side .info p, section.all-blogs .right-side .info h3 {
+  font-size: 0.8em;
+}
+section.all-blogs .right-side .info p {
+  margin-bottom: 5px;
+  color: #999;
+}
+section.all-blogs .right-side .info h3 {
+  font-weight: 500;
 }
 
+section.quotes .container > div {
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+section.quotes .container > div h2 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+section.quotes .container > div button {
+  width: 25%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 7px 0;
+  background-color: #f65d4e;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px #000;
+  color: #fff;
+  font-weight: 500;
+}
+section.quotes .container > div button:active {
+  box-shadow: 0px 0px 0px 0;
+}
+
+@media screen and (max-width: 767px) {
+  section.all-blogs .container > div {
+    flex-wrap: wrap-reverse;
+  }
+  section.all-blogs .left-side article:last-child {
+    margin-bottom: 50px;
+  }
+  section.quotes button {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.all-blogs .right-side {
+    display: none;
+  }
+}
 * {
   transition: all 0.5s ease;
 }
