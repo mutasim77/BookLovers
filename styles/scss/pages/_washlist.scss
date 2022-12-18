@@ -1,0 +1,48 @@
+section.wishlist{
+    margin-bottom: 100px;
+    table{
+        width: 100%;
+        tbody{
+            tr {
+                cursor: pointer;
+                td{
+                    &:first-child{
+                        width: 100px;
+                    }
+                    &:last-child{
+                        width: 50%;
+                    }
+                    padding: 10px;
+                    img{
+                        width: 80px;
+                    }
+
+                    .name{
+                        font-weight: 500;
+                    }
+                    .price{
+                        margin: 10px 0;
+                    }
+                    .price, .date{
+                        font-size: .9em;
+                        color: #999;
+                    }
+
+                    button{
+                        @include createButton();
+                        border: 1px solid #000;
+                    }
+                }
+
+                &:hover{
+                    background-color: #e9e7e7;
+                }
+            }
+        }
+    }
+    table, th,td{
+        border: 1px solid #999;
+        border-collapse: collapse;
+    }
+}
+
