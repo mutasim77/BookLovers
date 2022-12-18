@@ -180,13 +180,13 @@ section.slider > div p.animate {
   opacity: 0;
   transition: all 1s ease;
 }
-section.slider > div button {
+section.slider > div a {
   color: #000;
   padding: 1em 1.7em;
   background-color: #fff;
   border-radius: 20px;
 }
-section.slider > div button:hover {
+section.slider > div a:hover {
   color: #fff;
   background-color: #000;
 }

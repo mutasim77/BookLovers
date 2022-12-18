@@ -6,12 +6,12 @@ export function slider(event) {
     if (data == 1) {
         $("section.slider h1").css({ "opacity": '0' });
         $('section.slider p').css({ "opacity": '0' });
-        $('section.slider button').css({ "opacity": '0' });
+        $('section.slider a').css({ "opacity": '0' });
         setTimeout(() => {
             event.target.style.backgroundColor = '#f65d4e';
             $("section.slider h1").animate({ opacity: '1' }, 'slow');
             $("section.slider p").animate({ opacity: '1' }, 'slow');
-            $("section.slider button").animate({ opacity: '1' }, 'slow');
+            $("section.slider a").animate({ opacity: '1' }, 'slow');
             section.css('background', 'url("/img/slider1.png")')
             section.css('backgroundSize', 'cover');
         }, 1000)
@@ -22,12 +22,12 @@ export function slider(event) {
     } else {
         $("section.slider h1").css({ "opacity": '0' });
         $('section.slider p').css({ "opacity": '0' });
-        $('section.slider button').css({ "opacity": '0' });
+        $('section.slider a').css({ "opacity": '0' });
         setTimeout(() => {
             event.target.style.backgroundColor = '#f65d4e';
             $("section.slider h1").animate({ opacity: '1' }, 'slow');
             $("section.slider p").animate({ opacity: '1' }, 'slow');
-            $("section.slider button").animate({ opacity: '1' }, 'slow');
+            $("section.slider a").animate({ opacity: '1' }, 'slow');
             section.css('background', 'url("/img/slider2.png")')
             section.css('backgroundSize', 'cover');
         }, 1000)
