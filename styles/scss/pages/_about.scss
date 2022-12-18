@@ -1,0 +1,176 @@
+// company logo 
+section.company-logo{
+    text-align: center;
+    img{
+        margin-bottom: 30px;
+    }
+    p{
+        max-width: 700px;
+        margin:  0 auto;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+    margin-bottom: 70px;
+}
+
+// section story 
+section.story{
+    background-color: #faf5f3;
+    margin-bottom: 70px;
+    padding-bottom: 60px;
+    img{
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .container{
+        > div{
+            h1{
+                font-size: 2.7em;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .row{
+                letter-spacing: 1px;
+                gap: 50px;
+                > div{
+                    max-width: 365px;
+                }
+                h4{
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin: 25px 0;
+                }
+                p{
+                    color: #444444;
+                    font-size: .85em;
+                }
+            }
+        }
+        .q{
+            letter-spacing: 1px;
+            gap: 50px;
+            > div{
+                max-width: 365px;
+            }
+            h4{
+                font-weight: 600;
+                font-size: 1.3em;
+                // line-height: 20px;
+                margin: 25px 0;
+            }
+            p{
+                color: #444444;
+                font-size: .85em;
+            }
+        }
+    }
+}
+
+// section clients 
+section.clients{
+    margin-bottom: 100px;
+    h1{
+        font-size: 2em;
+        font-weight: 600;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 75%;
+            height: 1px;
+            top: 20px;
+            right: 0;
+            background-color: #9999;
+        }
+    }
+
+    .card-client{
+        margin-top: 40px;
+        .card{
+            text-align: center;
+            padding: 50px;
+            max-width: 410px;
+            border: 1px solid #9999;
+            border-radius: 17px;
+            img{
+                width: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            p{
+                margin: 30px 0;
+            }
+            .name{
+                font-size: .7em;
+                font-weight: 600;
+                span{
+                    font-weight: 400;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+section.send-email{
+    margin-bottom: 70px;
+    .container{
+        background: url('/img/sendEmail.png') no-repeat;
+        background-size: cover;
+        height: 385px;
+
+        > div{
+            position: relative;
+            max-width: 535px;
+            color: $white;
+            margin-left: 50px;
+            h2{
+                font-size: 2em;
+                font-weight: 600;
+            }
+            p{
+                margin: 20px 0;
+                font-size: .9em;
+            }
+
+            input{
+                width: 100%;
+                padding: 15px 0;
+                padding-left: 20px;
+                border-radius: 20px;
+                border: 1px solid #999;
+            }
+
+            button{
+                position: absolute;
+                bottom: 20px;
+                background-color: $helperColor;
+                padding: 15px;
+                padding: 15px;
+                border-radius: 20px;
+                bottom: 1px;
+                right: 0;
+
+                &:hover{
+                    background-color: #f47979;
+                }
+            }
+        }
+    }
+}
+
+// mobile 
+@media screen and(max-width:1024px) {
+    section.clients{
+        .card-client{
+            .card{
+                max-width: 100%;
+            }
+        }
+    }
+    section.send-email .container {
+        background-position: center;
+    }
+}

@@ -58,6 +58,10 @@
   padding: 100px 0;
 }
 
+.m-5 {
+  margin: 50px 0;
+}
+
 .header {
   background-color: #f65d4e;
   padding: 14px 0;
@@ -141,11 +145,11 @@ section.navbars .contacts a {
 }
 section.navbars .contacts a i {
   background-color: #ccc;
-  padding: 5px 7px;
+  padding: 5px;
   border-radius: 50%;
   color: #000;
   margin-right: 10px;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 section.navbars .contacts a:hover {
   color: #cf3424;
@@ -845,7 +849,7 @@ section.section-order .container > div button:hover {
     left: -70%;
     text-align: center;
     transition: all 1s ease;
-    top: 8.9%;
+    top: 8.3%;
     padding: 2em 0;
     border-radius: 0 0px 20px 0;
     border-bottom: 2px solid #000;
@@ -1601,6 +1605,162 @@ section.our-book-store .content div .info p {
   }
   section.our-book-store .container .content > div:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+section.company-logo {
+  text-align: center;
+  margin-bottom: 70px;
+}
+section.company-logo img {
+  margin-bottom: 30px;
+}
+section.company-logo p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+section.story {
+  background-color: #faf5f3;
+  margin-bottom: 70px;
+  padding-bottom: 60px;
+}
+section.story img {
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+section.story .container > div h1 {
+  font-size: 2.7em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+section.story .container > div .row {
+  letter-spacing: 1px;
+  gap: 50px;
+}
+section.story .container > div .row > div {
+  max-width: 365px;
+}
+section.story .container > div .row h4 {
+  font-weight: 600;
+  line-height: 20px;
+  margin: 25px 0;
+}
+section.story .container > div .row p {
+  color: #444444;
+  font-size: 0.85em;
+}
+section.story .container .q {
+  letter-spacing: 1px;
+  gap: 50px;
+}
+section.story .container .q > div {
+  max-width: 365px;
+}
+section.story .container .q h4 {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin: 25px 0;
+}
+section.story .container .q p {
+  color: #444444;
+  font-size: 0.85em;
+}
+
+section.clients {
+  margin-bottom: 100px;
+}
+section.clients h1 {
+  font-size: 2em;
+  font-weight: 600;
+  position: relative;
+}
+section.clients h1::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 1px;
+  top: 20px;
+  right: 0;
+  background-color: rgba(153, 153, 153, 0.6);
+}
+section.clients .card-client {
+  margin-top: 40px;
+}
+section.clients .card-client .card {
+  text-align: center;
+  padding: 50px;
+  max-width: 410px;
+  border: 1px solid rgba(153, 153, 153, 0.6);
+  border-radius: 17px;
+}
+section.clients .card-client .card img {
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+section.clients .card-client .card p {
+  margin: 30px 0;
+}
+section.clients .card-client .card .name {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+section.clients .card-client .card .name span {
+  font-weight: 400;
+  color: #999;
+}
+
+section.send-email {
+  margin-bottom: 70px;
+}
+section.send-email .container {
+  background: url("/img/sendEmail.png") no-repeat;
+  background-size: cover;
+  height: 385px;
+}
+section.send-email .container > div {
+  position: relative;
+  max-width: 535px;
+  color: #fff;
+  margin-left: 50px;
+}
+section.send-email .container > div h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+section.send-email .container > div p {
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+section.send-email .container > div input {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: 1px solid #999;
+}
+section.send-email .container > div button {
+  position: absolute;
+  bottom: 20px;
+  background-color: #f65d4e;
+  padding: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  bottom: 1px;
+  right: 0;
+}
+section.send-email .container > div button:hover {
+  background-color: #f47979;
+}
+
+@media screen and (max-width: 1024px) {
+  section.clients .card-client .card {
+    max-width: 100%;
+  }
+  section.send-email .container {
+    background-position: center;
   }
 }
 * {
