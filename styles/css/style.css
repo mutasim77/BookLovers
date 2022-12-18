@@ -1233,6 +1233,53 @@ section.all-shops .shop-card .logo img {
     height: 87% !important;
   }
 }
+section.on-sale h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+section.on-sale h1::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background-color: #f65d4e;
+  transition: all 0.3s ease;
+}
+section.on-sale h1:hover::after {
+  width: 0;
+}
+section.on-sale .hi-slide {
+  margin: 0 auto;
+}
+section.on-sale .hi-slide ul li {
+  border-radius: 15px;
+}
+section.on-sale .hi-slide ul li img {
+  border-radius: 15px;
+}
+section.on-sale .hi-next, section.on-sale .hi-prev {
+  height: 50px;
+  border-radius: 15px;
+  line-height: 50px;
+  background-color: red;
+}
+
+@media screen and (max-width: 767px) {
+  section.on-sale .container {
+    overflow: hidden;
+  }
+  section.on-sale .hi-slide {
+    left: -200px;
+    margin: 0;
+  }
+  section.on-sale .hi-slide .hi-next, section.on-sale .hi-slide .hi-prev {
+    display: none;
+  }
+}
 * {
   transition: all 0.5s ease;
 }

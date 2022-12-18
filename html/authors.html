@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/97543b6a54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/css/hislide.css">
 </head>
 
 <body>
@@ -91,6 +92,25 @@
         </div>
     </section>
 
+    <section class="on-sale">
+        <div class="container">
+            <h1>On Sale</h1>
+            <div class="slide hi-slide">
+                <div class="hi-prev"></div>
+                <div class="hi-next"></div>
+                <ul>
+                    <li><img src="/img/popularBooks/1.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/2.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/3.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/4.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/5.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/6.jpeg" alt="book"></li>
+                    <li><img src="/img/popularBooks/7.jpeg" alt="book"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -99,7 +119,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/Helpers/hislider.js"></script>
     <script type="module" src="../js/script.js"></script>
+    <script>
+        $('.slide').hiSlide({
+            interval: 3000,
+            speed: 300
+        });
+    </script>
 </body>
 
 </html>

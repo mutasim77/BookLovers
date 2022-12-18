@@ -1,0 +1,60 @@
+// card books 
+section.on-sale{
+    h1{
+        font-size: 1.4em;
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            bottom: -3px;
+            left: 0;
+            background-color: $helperColor;
+            transition: all .3s ease;
+        }
+
+        &:hover{
+            &::after{
+                width: 0;
+            }
+        }
+    }
+    
+    .hi-slide{
+        margin: 0 auto;
+        ul{
+            li{
+                border-radius: 15px;
+                img{
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+    .hi-next, .hi-prev{
+        height: 50px;
+        border-radius: 15px;
+        line-height: 50px;       
+        background-color: red;
+    }
+}
+
+
+@media screen and(max-width: 767px) {
+    section.on-sale{
+        .container{
+            overflow: hidden;
+        }
+
+        .hi-slide{
+            .hi-next, .hi-prev{
+                display: none;
+            }
+            left: -200px;
+            margin: 0;
+        }
+    }
+}
