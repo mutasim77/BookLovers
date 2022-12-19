@@ -92,12 +92,144 @@
         </div>
     </section>
 
+    <!-- section login and logout  -->
+    <section class="log-in-out">
+        <div class="container">
+            <div class="row flex flex-column justify-center">
+                <div class="login hide" id="login">
+                    <h3>Login</h3>
+                    <div class="flex flex-column">
+                        <label for="">Username</label>
+                        <input type="text" placeholder="Enter your username" id="log-username">
+                    </div>
+                    <div class="flex flex-column">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" id="log-password">
+                    </div>
+                    <div class="error hide">Invalid username or password</div>
+                    <div class="flex justify-between">
+                        <div>
+                            <input type="checkbox">
+                            <label>Remember me</label>
+                        </div>
+                        <p id="create-account">Create an Account</p>
+                    </div>
+
+                    <input type="button" id="log-in" class="btn" placeholder="Enter Your password" value="Log in">
+                </div>
+
+                <div class="login hid" id="register">
+                    <h3>Register</h3>
+                    <div class="flex flex-column">
+                        <label for="">Username</label>
+                        <input type="text" placeholder="Enter your username" id="reg-username">
+                    </div>
+                    <div class="flex flex-column">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="Enter your email" id="reg-email">
+                    </div>
+                    <div class="flex flex-column">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" id="reg-password">
+                    </div>
+                    <div class="error hide">Please fill out fields</div>
+                    <div class="flex">
+                        <p id="have-account">Already have and account?</p>
+                    </div>
+                    <input type="button" id="log-out" class="btn" placeholder="Enter Your password" value="Register">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section success  -->
+    <section class="success hide">
+        <div class="container">
+            <div class="flex flex-column margin-center align-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/006/951/976/non_2x/cute-penguin-cartoon-working-in-front-of-a-laptop-animal-technology-icon-illustration-concept-premium-vector.jpg"
+                    alt="picture">
+                <div> Hey, <span class="name">Mutasim</span> <br> Welcome!
+                    Еhis is your personal account. In the future we will add a lot of
+                    things here, like Dashboard.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container flex flex-column">
+            <div class="padding-80 flex flex-wrap justify-between">
+                <div class="flex flex-column">
+                    <h1>Contact Info</h1>
+                    <p>1418 River Drive, Suite 35 <br>
+                        Cottonhall, CA 9622
+                    </p>
+                    <p>
+                        Monday – Friday: 9:00-20:00 <br>
+                        Saturday: 11:00 – 15:00
+                    </p>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="storelist.html">StoreList</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column align-center">
+                    <div class="logo flex align-center">
+                        <img src="/img/logo.png" alt="" width="50px"> BookLovers
+                    </div>
+                    <p>Got Questions ? Call us 24/7!</p>
+                    <h1 class="numbers">+1 (246) 247 - 5287</h1>
+                    <div class="flex justify-center gap-5 social-media">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter""></i></a>
+                                    <a href=" https://www.instagram.com/" target="_blank"><i
+                                    class=" fa fa-instagram"></i></a>
+                        <a href="https://ru.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Corporate</h1>
+                    <ul>
+                        <li> <a href="storelist.html">Vendors</a></li>
+                        <li> <a href="home.html">Deals Of Weak</a></li>
+                        <li><a href="storelist.html">Our Suppliers</a></li>
+                        <li> <a href="home.html">Popular Books</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-column">
+                    <h1>Our Service</h1>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="about.html">Returns</a></li>
+                        <li><a href="shop.html">Product</a></li>
+                        <li><a href="faq.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-between text-center">
+                <div>Copyright © 2022 <span>Mutasim</span>. All rights reserved.</div>
+                <img src="/img/payments.png" alt="">
+            </div>
+        </div>
+    </footer>
+
 
     <!-- scripts  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="../js/script.js"></script>
+    <script src="../js/Helpers/account.js"></script>
 </body>
 
 </html>

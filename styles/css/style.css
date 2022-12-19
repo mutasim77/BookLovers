@@ -1826,6 +1826,89 @@ section.wishlist table, section.wishlist th, section.wishlist td {
   border-collapse: collapse;
 }
 
+section.log-in-out {
+  margin-bottom: 100px;
+}
+section.log-in-out .login {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+section.log-in-out .login > div {
+  margin-bottom: 30px;
+}
+section.log-in-out .login h3 {
+  font-weight: 600;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.log-in-out .login label {
+  color: #444;
+  font-size: 0.9em;
+  margin-left: 10px;
+  margin: 0 0 10px 10px;
+}
+section.log-in-out .login input {
+  padding: 15px 0 15px 20px;
+  border: 1px solid #999;
+  border-radius: 50px;
+}
+section.log-in-out .login p {
+  font-size: 0.8em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+section.log-in-out .login .error {
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #fc8080;
+  padding: 7px 0;
+  color: #fff;
+}
+section.log-in-out .login .error.hide {
+  display: none;
+}
+section.log-in-out .login .btn {
+  background-color: #f65d4e;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 15px;
+  width: 40%;
+  margin: 0 auto;
+  margin-left: 35%;
+  cursor: pointer;
+}
+section.log-in-out .login .btn:hover {
+  background-color: #e42929;
+}
+section.log-in-out .login.hide {
+  display: none;
+}
+
+section.success {
+  margin-bottom: 100px;
+}
+section.success .container > div {
+  border: 1px solid #999;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(228, 41, 41, 0.1);
+}
+section.success .container > div img {
+  width: 100px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+section.success .container > div > div span {
+  color: #f65d4e;
+}
+section.success.hide {
+  display: none;
+}
+
 * {
   transition: all 0.5s ease;
 }
