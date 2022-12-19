@@ -104,10 +104,11 @@
                 <div class="forms flex flex-column">
                     <h2>We Would Love To Hear From You.</h2>
                     <p>Your email address will not be published.</p>
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Name" id="name" autocomplete="off">
+                    <input type="text" placeholder="Subject" id="subject" autocomplete="off">
                     <textarea placeholder="Message"></textarea>
-                    <button>Submit</button>
+                    <div class="error hide">Ooops, Something goes wrong!</div>
+                    <button id="btn">Submit</button>
                 </div>
             </div>
         </div>
@@ -231,6 +232,8 @@
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="../js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/Helpers/sendEmailJS.js"></script>
 </body>
 
 </html>

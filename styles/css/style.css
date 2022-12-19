@@ -1550,6 +1550,17 @@ section.contact-us > div > div::after {
   background-color: #999;
   bottom: 0;
 }
+section.contact-us .error {
+  background-color: #f65d4e;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  margin-top: 7px;
+  border-radius: 10px;
+}
+section.contact-us .error.hide {
+  display: none;
+}
 
 section.our-book-store {
   margin: 100px 0;

@@ -74,6 +74,19 @@ section.contact-us{
             }
         }
     }
+
+    .error{
+        background-color: $helperColor;
+        color: $white;
+        text-align: center;
+        padding: 2px 0;
+        margin-top: 7px;
+        border-radius: 10px;
+        
+        &.hide{
+            display: none;
+        }
+    }
 }
 
 // section our book store 
