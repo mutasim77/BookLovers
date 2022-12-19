@@ -185,20 +185,20 @@ section.section-categories{
             > div:first-child{
                 width: 100%;
                 max-width: 555px;
-                background: url('/img/homeCategories/6.jpeg');
+                background: url('../../img/homeCategories/6.jpeg');
             }
 
             >div:nth-child(2){
                 width: 100%;
                 max-width: 355px;
-                background: url('/img/homeCategories/5.jpeg');
+                background: url('../../img/homeCategories/5.jpeg');
             }
             
             >div:last-child{
                 width: 100%;
                 max-width: 435px;
                 background-color: blue;
-                background: url('/img/homeCategories/4.jpeg');
+                background: url('../../img/homeCategories/4.jpeg');
             }
         }
 
@@ -207,20 +207,20 @@ section.section-categories{
             > div:first-child{
                 width: 100%;
                 max-width: 355px;
-                background: url('/img/homeCategories/3.jpeg');
+                background: url('../../img/homeCategories/3.jpeg');
             }
 
             >div:nth-child(2){
                 width: 100%;
                 max-width: 435px;
                 background-color: green;
-                background: url('/img/homeCategories/2.jpeg');
+                background: url('../../img/homeCategories/2.jpeg');
             }
             
             >div:last-child{
                 width: 100%;
                 max-width: 555px;
-                background: url('/img/homeCategories/1.jpeg');
+                background: url('../../img/homeCategories/1.jpeg');
             }
         }
     }
@@ -308,7 +308,7 @@ section.section-popular-books{
 
 // section holiday gifts 
 section.section-holiday-gift{
-     background: url('/img/holidayGift.jpeg') no-repeat;
+     background: url('../../img/holidayGift.jpeg') no-repeat;
      background-position: center center;
      background-size: cover;
      min-height: 600px;
@@ -360,7 +360,7 @@ section.section-all-categories {
             width: 100%;
             max-width: 420px;
             border-radius: 15px;
-            background: url('/img/Biographies.jpeg') no-repeat;
+            background: url('../../img/Biographies.jpeg') no-repeat;
             background-size: cover;
             border-radius: 25px;
             padding: 50px;
@@ -392,13 +392,13 @@ section.section-all-categories {
     
     .row:nth-child(2){
         .left-side{
-            $url : '/img/Children.jpeg';
+            $url : '../../img/Children.jpeg';
             @include backgroundCategories($url);
         }
     }
     .row:last-child{
         .left-side{           
-            $url : '/img/Fiction.jpeg';
+            $url : '../../img/Fiction.jpeg';
             @include backgroundCategories($url);
         }
     }
@@ -408,7 +408,7 @@ section.section-all-categories {
 // section meetup 
 section.section-meetup{
     min-height: 620px;
-    background: url('/img/meetup.jpeg') no-repeat;
+    background: url('../../img/meetup.jpeg') no-repeat;
     background-position: center center;
     background-size: cover;
     .left-side{
@@ -460,7 +460,7 @@ section.section-meetup{
 
 section.section-order{
     .container{
-        background: url('/img/youOrder.jpeg');
+        background: url('../../img/youOrder.jpeg');
         background-size: cover;
         padding: 80px 0;
         border-radius: 20px;
@@ -485,6 +485,9 @@ section.section-order{
                 padding: .9em 1.2em;
                 border-radius: 20px;
                 color: $black;
+            }
+            a{
+                color: $white;
             }
             button{
                 position: absolute;

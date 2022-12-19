@@ -161,7 +161,7 @@ section.navbars .contacts a:hover {
 }
 
 section.slider {
-  background: url("/img/slider1.png") no-repeat;
+  background: url("../../img/slider1.png") no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -359,34 +359,34 @@ section.section-categories .categories .flex > div:hover {
 section.section-categories .categories .flex:first-child > div:first-child {
   width: 100%;
   max-width: 555px;
-  background: url("/img/homeCategories/6.jpeg");
+  background: url("../../img/homeCategories/6.jpeg");
 }
 section.section-categories .categories .flex:first-child > div:nth-child(2) {
   width: 100%;
   max-width: 355px;
-  background: url("/img/homeCategories/5.jpeg");
+  background: url("../../img/homeCategories/5.jpeg");
 }
 section.section-categories .categories .flex:first-child > div:last-child {
   width: 100%;
   max-width: 435px;
   background-color: blue;
-  background: url("/img/homeCategories/4.jpeg");
+  background: url("../../img/homeCategories/4.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:first-child {
   width: 100%;
   max-width: 355px;
-  background: url("/img/homeCategories/3.jpeg");
+  background: url("../../img/homeCategories/3.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:nth-child(2) {
   width: 100%;
   max-width: 435px;
   background-color: green;
-  background: url("/img/homeCategories/2.jpeg");
+  background: url("../../img/homeCategories/2.jpeg");
 }
 section.section-categories .categories .flex:last-child > div:last-child {
   width: 100%;
   max-width: 555px;
-  background: url("/img/homeCategories/1.jpeg");
+  background: url("../../img/homeCategories/1.jpeg");
 }
 
 section.section-popular-books .left-side {
@@ -486,7 +486,7 @@ section.section-popular-books .right-side .content > div {
 }
 
 section.section-holiday-gift {
-  background: url("/img/holidayGift.jpeg") no-repeat;
+  background: url("../../img/holidayGift.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 600px;
@@ -559,7 +559,7 @@ section.section-all-categories .row .left-side {
   width: 100%;
   max-width: 420px;
   border-radius: 15px;
-  background: url("/img/Biographies.jpeg") no-repeat;
+  background: url("../../img/Biographies.jpeg") no-repeat;
   background-size: cover;
   border-radius: 25px;
   padding: 50px;
@@ -597,17 +597,17 @@ section.section-all-categories .row .right-side .content .content-info .price {
   font-weight: 600;
 }
 section.section-all-categories .row:nth-child(2) .left-side {
-  background: url("/img/Children.jpeg") no-repeat;
+  background: url("../../img/Children.jpeg") no-repeat;
   background-size: cover;
 }
 section.section-all-categories .row:last-child .left-side {
-  background: url("/img/Fiction.jpeg") no-repeat;
+  background: url("../../img/Fiction.jpeg") no-repeat;
   background-size: cover;
 }
 
 section.section-meetup {
   min-height: 620px;
-  background: url("/img/meetup.jpeg") no-repeat;
+  background: url("../../img/meetup.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -677,7 +677,7 @@ section.section-meetup .left-side a:hover::after {
 }
 
 section.section-order .container {
-  background: url("/img/youOrder.jpeg");
+  background: url("../../img/youOrder.jpeg");
   background-size: cover;
   padding: 80px 0;
   border-radius: 20px;
@@ -702,6 +702,9 @@ section.section-order .container > div input {
   padding: 0.9em 1.2em;
   border-radius: 20px;
   color: #000;
+}
+section.section-order .container > div a {
+  color: #fff;
 }
 section.section-order .container > div button {
   position: absolute;
@@ -1734,7 +1737,7 @@ section.send-email {
   margin-bottom: 70px;
 }
 section.send-email .container {
-  background: url("/img/sendEmail.png") no-repeat;
+  background: url("../../img/sendEmail.png") no-repeat;
   background-size: cover;
   height: 385px;
 }
@@ -1752,12 +1755,16 @@ section.send-email .container > div p {
   margin: 20px 0;
   font-size: 0.9em;
 }
+section.send-email .container > div a {
+  color: #fff;
+}
 section.send-email .container > div input {
   width: 100%;
   padding: 15px 0;
   padding-left: 20px;
   border-radius: 20px;
   border: 1px solid #999;
+  color: #fff;
 }
 section.send-email .container > div button {
   position: absolute;
