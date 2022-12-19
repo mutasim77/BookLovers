@@ -45,13 +45,20 @@
     }
 
     .header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a{
+            .fa.fa-user{
+                border-right: 1px solid $white;
+            }
+        }
         i{ 
             cursor: pointer;
             color: $white;
             font-size: 1.3em;
             margin-right: 10px;
             padding-right: 10px;
-            border-right: 1px solid $white;
             &:hover{
                 color: $black;
             }

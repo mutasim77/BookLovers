@@ -100,13 +100,20 @@
 .header .input button i {
   color: #fff;
 }
+.header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .header-right a .fa.fa-user {
+  border-right: 1px solid #fff;
+}
 .header .header-right i {
   cursor: pointer;
   color: #fff;
   font-size: 1.3em;
   margin-right: 10px;
   padding-right: 10px;
-  border-right: 1px solid #fff;
 }
 .header .header-right i:hover {
   color: #000;
@@ -1898,6 +1905,12 @@ section.log-in-out .login .btn:hover {
 section.log-in-out .login.hide {
   display: none;
 }
+section.log-in-out .login #reg-email:invalid, section.log-in-out .login #reg-password:invalid, section.log-in-out .login #reg-username:invalid {
+  border-color: #e42929;
+}
+section.log-in-out .login #reg-email:valid, section.log-in-out .login #reg-password:valid, section.log-in-out .login #reg-username:valid {
+  border-color: #3fda28;
+}
 
 section.success {
   margin-bottom: 100px;
@@ -1920,6 +1933,13 @@ section.success .container > div > div span {
 }
 section.success.hide {
   display: none;
+}
+section.success button {
+  margin-top: 20px;
+  padding: 7px 17px;
+  background-color: #f65d4e;
+  color: #fff;
+  border-radius: 9px;
 }
 
 * {

@@ -96,11 +96,13 @@
     <section class="log-in-out">
         <div class="container">
             <div class="row flex flex-column justify-center">
+
+                <!-- login  -->
                 <div class="login hide" id="login">
                     <h3>Login</h3>
                     <div class="flex flex-column">
                         <label for="">Username</label>
-                        <input type="text" placeholder="Enter your username" id="log-username">
+                        <input type="text" placeholder="Enter your username" id="log-username" autocomplete="off">
                     </div>
                     <div class="flex flex-column">
                         <label for="password">Password</label>
@@ -114,23 +116,25 @@
                         </div>
                         <p id="create-account">Create an Account</p>
                     </div>
-
                     <input type="button" id="log-in" class="btn" placeholder="Enter Your password" value="Log in">
                 </div>
 
+                <!-- registration  -->
                 <div class="login hid" id="register">
                     <h3>Register</h3>
                     <div class="flex flex-column">
                         <label for="">Username</label>
-                        <input type="text" placeholder="Enter your username" id="reg-username">
+                        <input type="text" placeholder="Enter your username" id="reg-username" autocomplete="off"
+                            minlength="5">
                     </div>
                     <div class="flex flex-column">
                         <label for="">Email</label>
-                        <input type="text" placeholder="Enter your email" id="reg-email">
+                        <input type="text" placeholder="Enter your email" id="reg-email" autocomplete="off"
+                            pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]+[a-z]">
                     </div>
                     <div class="flex flex-column">
                         <label for="password">Password</label>
-                        <input type="password" placeholder="Enter your password" id="reg-password">
+                        <input type="password" placeholder="Enter your password" id="reg-password" minlength="8">
                     </div>
                     <div class="error hide">Please fill out fields</div>
                     <div class="flex">
@@ -138,6 +142,7 @@
                     </div>
                     <input type="button" id="log-out" class="btn" placeholder="Enter Your password" value="Register">
                 </div>
+
             </div>
         </div>
     </section>
@@ -148,10 +153,11 @@
             <div class="flex flex-column margin-center align-center">
                 <img src="https://static.vecteezy.com/system/resources/previews/006/951/976/non_2x/cute-penguin-cartoon-working-in-front-of-a-laptop-animal-technology-icon-illustration-concept-premium-vector.jpg"
                     alt="picture">
-                <div> Hey, <span class="name">Mutasim</span> <br> Welcome!
-                    Еhis is your personal account. In the future we will add a lot of
+                <div> Hey, <span class="name">Mutasim</span>, Welcome! <br>
+                    This is your personal account. In the future we will add a lot of
                     things here, like Dashboard.
                 </div>
+                <button>Log Out</button>
             </div>
         </div>
     </section>
