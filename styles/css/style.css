@@ -1055,7 +1055,8 @@ section.card-books .right-side {
   margin: 0 auto;
 }
 section.card-books .right-side .content img {
-  max-width: 200px;
+  max-width: 197px;
+  height: 271px;
   border-radius: 15px;
 }
 section.card-books .right-side .content h4 {
@@ -1078,6 +1079,7 @@ section.card-books .right-side .content .price {
   font-weight: 600;
 }
 section.card-books .right-side .content > div {
+  max-width: 210px;
   padding: 0 8px;
   padding-bottom: 30px;
 }

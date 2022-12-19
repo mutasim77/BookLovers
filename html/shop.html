@@ -42,10 +42,8 @@
                                 alt="logo">BookLovers</a>
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="Search Books...">
-                        <a href="shop.html">
-                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </a>
+                        <input type="text" placeholder="Search Books..." id="search" autocomplete="off">
+                        <button id="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                     <div class="header-right">
                         <a href="account.html"><i class="fa fa-user"></i></a>
@@ -97,7 +95,7 @@
     <!-- section cards boooks  -->
     <section class="card-books">
         <!-- right side  -->
-        <div class="right-side" data-aos="fade-down">
+        <div class="right-side">
             <div class="content flex flex-wrap justify-center" id="shop-books">
 
                 <div class="flex gap-2 flex-column">
@@ -346,6 +344,7 @@
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="../js/script.js"></script>
+    <script src="../js/bookAPI.js"></script>
 </body>
 
 </html>

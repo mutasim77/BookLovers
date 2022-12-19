@@ -14,12 +14,14 @@ section.card-books{
         margin:  0 auto;
         .content{
             img{
-                max-width: 200px;
+                max-width: 197px;
+                height: 271px;
                 border-radius: 15px;
             }
             @include contenInfo();
 
             > div{
+                max-width: 210px;
                 padding: 0 8px;
                 padding-bottom: 30px;
             }
